@@ -62,4 +62,12 @@ ORDER: base + typography > general layout + grid > page layout > components
 	color: transparent;
 }
 
+/////////////////////////////////////////////////////////////////////////////
+// btn mixins
+/////////////////////////////////////////////////////////////////////////////
+
+@mixin btnIconSize {
+	width: clamp(3.5rem, 9vw, 4.5rem);
+	height: clamp(3.5rem, 9vw, 4.5rem);
+}
 

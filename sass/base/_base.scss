@@ -9,7 +9,7 @@
 
 html {
 	// smoothes automatic scroll when you click on a navlink
-	scroll-behavior: smooth;
+	scroll-behavior:smooth;
 	/* 	1rem is equal to 10px */
 	/* 	because 10px / 10 is equal to 1rem */
 	/* 	therefore 30px is equal to 3rem */
@@ -24,21 +24,25 @@ html {
 
 	@include respond(tab-land) {
 	/* 	13px / 16px *100 = 81.25% */
-		font-size: 81.25%; // 1.4rem = 18.2px 
+		// font-size: 81.25%; // 1.4rem = 18.2px 
+		font-size: 62.5%; // 1rem = 10px
 	}
 
 	@include respond(desk) {
 	/* 	15px / 16px *100 = 93.75% */
-		font-size: 93.75%; // 1.4rem = 21px
+		font-size: 65%; // 1.4rem = 21px
 	}
 	
 	@include respond(big-desk) {
 	/* 	18px / 16px *100 = 112.5% */
-		font-size: 112.5%; // 1.4rem = 25.2px
+		font-size: 70%; // 1.4rem = 25.2px
 	}
+
+	// background-color: $cp-lightGrey; // This affects the headingH2Container icons
 }
 
 body {
+	background-color: $cp-white;
 	/* This makes dealing with the sizes of elements much easier, 
 		and generally eliminates a number of pitfalls you can stumble on
 		 while laying out your content. */
@@ -48,6 +52,11 @@ body {
 	box-sizing: border-box;
 	// for position absolute iro popup component
 	position: relative;
+
+	@media (min-width: 2000px) {
+		margin: 0 auto;
+		max-width: 2000px;
+	}
 }
 
 

@@ -1,3 +1,64 @@
 .footer {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $cp-darkBlue;
+
+    padding: clamp(.25rem, 1vh, .85rem) 1rem;
+    gap: .1rem;
+
+    @media (min-width: 500px) {
+            gap: .35rem;
+    }
+
+
+    opacity: 1;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transition: opacity .6s;
+
+    @media (min-width: 2000px) {
+        margin: 0 auto;
+        max-width: 2000px;
+    }
+
+    &__legal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0;
+        margin: 0;
+        
+        cursor: pointer;
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 500px) {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    &__schalk {
+        cursor: pointer;
+    }
+
+    &__schalk--name {
+
+        margin-left:.25rem;
+        
+    }
 }

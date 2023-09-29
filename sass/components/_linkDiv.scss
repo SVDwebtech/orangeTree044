@@ -1,0 +1,13 @@
+.linkDiv {
+    position: absolute;
+    top: -8.5rem;
+    left: 0;
+
+    &--home {
+        top: 0;
+    }
+
+    &--termsAndConditions {
+        top: -10rem;
+    }
+}

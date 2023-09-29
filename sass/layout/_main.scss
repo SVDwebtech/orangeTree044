@@ -1,3 +1,802 @@
-main {
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 5rem;
+
+    padding: 2rem 1rem 0;
+
+    // tablet portrait
+    @media (min-width: 600px) {
+        padding: 2rem 4rem 0;
+    }
     
+    &__aboutSection {
+    }
+}
+
+.promotionSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    &__promotionTextAndFlipbookContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+        
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            gap: 4rem;
+        }
+    }
+
+    &__paragraph {
+        margin: 3rem 0 3rem;
+
+        @include respond(tab-land) {
+            flex: 0 0 30%;
+        }
+    } 
+
+    &__promotionContainer {
+        margin-bottom: 3rem;
+
+        @media (min-width: 500px) {
+            margin: 0 auto 3rem;
+            max-width: min(80%, 650px);
+        }
+
+        @include respond(tab-land) {
+            max-width: 500px;
+            margin: 3rem auto 0 0;
+        }
+    }
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 3rem;
+
+    &__ourBusAndOurTeamContainer {
+
+        & > :first-child {
+            margin-bottom: 2rem;
+        }
+
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__ourBusiness {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1.25rem;
+
+        margin: 0 auto;
+        max-width: 45rem;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 47%;
+            max-width: 47%;
+            margin: 0;
+        }
+    }
+
+    &__ourTeam {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 2rem;
+
+        margin: 0 auto;
+        max-width: 45rem;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 47%;
+            max-width: 47%;
+            margin: 0;
+        }
+    }
+}
+
+.dispensarySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 3rem;
+
+    &__dispAndCounterMedsContainer {
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    article {
+        max-width: 45rem;
+        margin: 0 auto;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 47%;
+            max-width: 47%;
+            margin: 0;
+        }
+    }
+
+    article > *:not(img) {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        border: 1px solid $cp-green;
+        padding: .75rem;
+        shape-outside: element();
+    }
+
+    &__image--dispensary {
+        float: left;
+        margin: 0 1.5rem .5rem 0;
+        width: clamp(12rem, 28vw, 15rem);
+    }
+
+    &__image--counterMeds {
+        float: right;
+        margin: 0 0 .5rem 2rem;
+        width: clamp(14rem, 35vw, 22rem);
+
+        @include respond(tab-land) {
+            float: left;
+            margin: 0 2rem .5rem 0;
+        }
+    }
+
+}
+
+.clinicSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 3rem;
+
+    &__clinicIntroAndServicesContainer {
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    article {
+        max-width: 45rem;
+        margin: 0 auto 2rem;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            margin: 0 0 2rem;
+            min-width: 47%;
+            max-width: 47%;
+        }
+    }
+
+    article > *:not(p) {
+        margin-bottom: 2rem;
+    }
+
+    article:nth-child(2) {
+        @include respond(tab-land) {
+            margin-top: 4rem;
+        }
+    }
+
+    article:nth-child(2) > * {
+        margin-bottom: 2rem;
+    }
+
+    &__clearFix {
+        clear: both;
+    }
+
+    &__image {
+        border: 1px solid $cp-green;
+        padding: .75rem;
+        shape-outside: element();
+    }
+
+    &__image--clinic {
+        float: left;
+        margin: 0 2rem .5rem 0;
+        width: clamp(14rem, 35vw, 22rem);
+    }
+
+    &__clearFix {
+        clear: both;
+    }
+
+    @media (min-width: 600px) {
+        &__clinicServicesContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            margin: 1.5rem auto;
+            max-width: fit-content;
+            min-height: 100px;
+        } 
+
+        &__item {
+           flex: 0 0 250px;
+        }    
+    }
+
+    @include respond(tab-land) {
+        &__item {
+           flex: 0 0 185px;
+        } 
+    }
+
+    @include respond(desk) {
+        &__item {
+           flex: 0 0 210px;
+        } 
+    }
+
+    @media (min-width: 1500px) {
+        &__item {
+           flex: 0 0 220px;
+        } 
+    }
+
+    @media (min-width: 1600px) {
+        &__item {
+           flex: 0 0 240px;
+        } 
+    }
+
+    @include respond(big-desk) {
+        &__item {
+           flex: 0 0 280px;
+        } 
+    }    
+}
+
+.importantInfoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 3rem;
+
+    &__introAndLinksContainer {
+        // margin: 0 auto;
+
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            gap: 1.5rem;
+        }
+    }
+
+    article {
+        max-width: 45rem;
+        margin: 0 auto;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 44%;
+            max-width: 44%;
+            margin: 0;
+        }
+    }
+
+    article > *:not(img, p) {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        border: 1px solid $cp-green;
+        padding: .75rem;
+        shape-outside: element();
+    }
+
+    &__image--importantInfo {
+        float: left;
+        margin: 0 2rem .5rem 0;
+        width: clamp(14rem, 35vw, 22rem);
+
+        @include respond(tab-land) {
+            float: left;
+            width: 60%;
+        }
+    }
+
+    &__clearFix {
+        clear: both;
+    }
+
+
+    &__linksList {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 1.75rem;
+
+        margin-top: 2rem;
+
+        & > * {
+            margin-bottom: .75rem;
+        }
+
+        // tablet portrait 
+        @media (min-width: 600px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            gap: 3rem;
+        }
+
+        @include respond(tab-land) {
+            gap: 3rem;
+            margin-top: 5rem;
+            & > * {
+                margin-bottom: .15rem;
+            }
+            min-width: 52%;
+            max-width: 52%;
+        }        
+    }
+
+    &__linkItem {
+        background-color: $cp-green;
+
+        width: min(45rem, 100%);
+        min-height: calc(10rem + 5vh);
+
+        @media (min-width: 600px) {
+            flex: 1 0 300px;
+            min-height: calc(7em + 5vh);
+        }
+
+        @include respond(tab-land) {
+            flex: 1 0 180px;
+            min-height: calc(5rem + 7vh);
+        }
+
+        position: relative;
+
+        &--pregnancy {
+            background: linear-gradient(to top, rgba($cp-white, .9) 25%, rgba($cp-white, .4) 80%), url('../img/importantInfo/ProteaPharmacyLinksPregnancy.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: $bs-dark;
+        }
+
+        &--vaccination {
+            background: linear-gradient(to top, rgba($cp-white, .9) 15%, rgba($cp-white, .4) 60%), url('../img/importantInfo/ProteaPharmacyLinksVaccination.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: $bs-dark;
+        }
+        
+        &--children {
+            background: linear-gradient(to top, rgba($cp-white, .9) 25%, rgba($cp-white, .4) 80%), url('../img/importantInfo/ProteaPharmacyLInksChildrensHealth.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: $bs-dark;
+        }
+
+        &--sport {
+            background: linear-gradient(to top, rgba($cp-white, .9) 25%, rgba($cp-white, .4) 80%), url('../img/importantInfo/ProteaPharmacyLinksDrugFreeSport.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: $bs-dark;
+        }
+
+        &--deptHealthLimpopo {
+            background: url('../img/importantInfo/DptHealthLimpopo.webp');
+            background-repeat: no-repeat;
+            background-size: clamp(15rem, 30vh, 25rem);
+            background-position: top;
+            box-shadow: $bs-dark;
+            position: relative;
+        }
+
+        &--deptHealthSA {
+            background: url('../img/importantInfo/DeptHealthSA.webp');
+            background-repeat: no-repeat;
+            background-size: clamp(15rem, 30vh, 25rem);;
+            background-position: top;
+            box-shadow: $bs-dark;
+            position: relative;
+        }
+
+        &--deptHealthLimpopo, &--deptHealthSA {
+            @include respond(tab-land) {
+                background-size: clamp(8rem, 18vh, 18rem);
+            }
+        }
+
+        &--deptHealthLimpopo::after, &--deptHealthSA::after {
+            content: "";
+            background-color: white;
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .85rem;
+
+        position: absolute;
+        bottom: 1.25rem;
+        left: 0;
+        right: 0;
+    }
+    
+    &__icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.contactUsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    & > * {
+        margin-bottom: 4rem;
+    }
+
+    &__contactNumbersAndEmail {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        margin-bottom: 0 auto 4rem;
+
+        & > * {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__contactDetailsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            gap: 4rem;
+    }
+
+    // tablet portrait
+    @media (min-width: 600px) {
+        &__contactDetailsContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            gap: 3.2rem;
+        }
+
+        &__contactDetailsSection {
+            flex: 0 0 350px;
+        }
+    }
+
+    @include respond(tab-land) {
+        &__contactDetailsContainer {
+            gap: clamp(2.5rem, 5vw, 7rem);
+            // gap: 7rem;
+        }
+        
+        &__contactDetailsSection {
+            flex: 0 0 300px;
+        }
+    }
+
+    @media (min-width: 1450px) {
+        &__contactDetailsSection {
+            flex: 0 0 330px;
+        }
+    }
+
+    @media (min-width: 1750px) {
+        &__contactDetailsSection {
+            flex: 0 0 340px;
+        }
+    }
+
+    @include respond(big-desk) {
+        &__contactDetailsSection {
+            flex: 0 0 400px;
+        }
+    }
+
+    
+
+    &__contactDetailsPharmacy, 
+    &__contactDetailsPharmacists, 
+    &__contactDetailsClinic, 
+    &__contactDetailsAccounts, 
+    &__contactDetailsMedicalAids {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1.5rem;
+    }
+
+    &__pharmacist, &__staffMember {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: .25rem;
+    }
+
+    &__contactItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            justify-content: flex-start;
+        }
+
+        gap: .3rem;
+    }
+
+    &__contactItem a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .3rem;
+    }
+
+    &__icon {
+        height: 16px;
+        width: 16px;
+
+        @include respond(tab-port) {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &__contactTradingHours {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1rem;
+
+        margin: 0 auto 5rem;
+        max-width: 45rem;
+
+        // tablet portrait
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+    }
+
+    &__tradingHoursDetails {
+        & > * {
+            margin-bottom: 1.5rem;
+
+            @media (min-width:600px) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            & > * {
+                margin-right: 4rem;            
+            }
+        }
+
+        @media (min-width: 600px) {
+        
+        }
+    }
+
+    &__mapAndContactformContainer {
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 5rem
+        }
+    }
+
+    &__contactMap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        
+        width: min(100%, 45rem);
+        margin: 0 auto;
+
+        & > * {
+            margin-bottom: 3rem;
+        }
+
+        a {
+            width: fit-content;
+            margin: 0 auto 8rem;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    
+        @include respond(tab-land) {
+            max-width: 45%;
+            margin: 0;
+        }
+    }
+
+    &__googleMapsContainer {
+        border: 1px solid $cp-green;
+        box-shadow: $bs-dark;
+
+        width: 100%;
+        margin: 0 auto 4rem;
+
+    }
+
+    &__googleMaps {
+        width: 100%;
+        height: 45vh;
+     
+    }
+
+    &__gpsAddress {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1rem;
+
+        margin: 0 auto 5rem;
+        max-width: 45rem;
+
+        
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 45%;
+        }
+    }
+
+    &__gpsAddressDetails {
+        & > * {
+            margin-bottom: 1.5rem;
+
+            @media (min-width:600px) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            & > * {
+                margin-right: 4rem;            
+            }
+        }
+
+        @media (min-width: 600px) {
+        
+        }
+    }
+
+    .paragraph--gpsAddressParDetails {
+        cursor: pointer;
+    }
+
+    .paragraph--gpsAddressIntro {
+        @include respond(tab-land) {
+            margin-top: 1.15rem;
+        }
+    }
+
 }

@@ -1,17 +1,95 @@
-.btn:link, .btn:visited {
-    
-}
+.btn {  
+    background-color: $cp-darkBlue;
+    border-top: 2px solid $cp-darkGrey;
+    border-left: 2px solid $cp-grey;
+    border-bottom: 2px solid $cp-lightGrey;
+    border-right: 2px solid $cp-light;
+    border-radius: .45rem;
+    box-shadow: $bs-btn;
 
-.btn {
-    
-    
-    
-}
+    width: fit-content;
 
-.btn:hover { 
-   
-}
+    padding: .25em 1em;
+    margin: 0 auto;
 
-.btn:active {
-    
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: all .2s;
+
+    &:link, &:visited {
+        text-decoration: none;
+        transform: translateY(0px);
+    }
+
+    .photoCollage__cardPhoto:hover & {
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        border-bottom: 2px solid $cp-grey;
+        border-right: 2px solid $cp-grey;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
+        transform: translateY(-1px);
+    }
+
+    &--primary-blue {
+        background-color: rgba($cp-darkBlue, .85);
+    }
+
+    &--primary-white {
+        background-color: rgba($cp-white, .85);
+    }
+
+    &--getDirections {
+        
+    }
+
+    &--cardPhotoBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .5rem;
+
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+
+        width: fit-content;
+
+        padding: 0 0 .25rem;
+        margin: 0 auto 0 0;
+
+        cursor: pointer;
+        backface-visibility: hidden;
+        transition: all .2s;
+    }
+
+    &--cardPhoto:hover &__cardPhotoBtn {
+        box-shadow: none;
+    }
+
+    &--cardPhotoBackBtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: .25rem;
+
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+
+        width: fit-content;
+
+        padding: 0 0 .25rem;
+        margin: 0 auto 0 0;
+
+        cursor: pointer;
+        backface-visibility: hidden;
+        transition: all .2s;
+    }
 }

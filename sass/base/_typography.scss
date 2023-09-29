@@ -3,18 +3,514 @@
 // font-family: 'Lilita One', cursive;  --> H2
 // font-family: 'Rum Raisin', sans-serif;  --> H1
 
+// font-family: 'Lato', sans-serif; --> paragraph content
+// font-family: 'Montserrat', sans-serif; --> headings
+// font-family: 'Open Sans', sans-serif; --> subheadings
+// font-family: 'Roboto', sans-serif; --> navlists
+
 body {
-	color: $cf-darkBlue;
-	font-family: Arial, Helvetica, sans-serif;
+	color: $cf-dark;
+	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
-	line-height: 1.6;
-
+	line-height: 1.5;
 }
 
-.headingH2 {
-	font-family: 'Lilita One', cursive;
-	color: $cf-darkBlue;
-	font-size: 5rem;
+.navbarSection {
+	color: $cf-white;
+	font-size: 1rem;
 	
+}
+
+.logo {
+	font-size: clamp(calc(1.2rem + .5vw), 1.5vh, calc(1.7rem + .5vw));
+	line-height: 1;
+	font-weight: 900;
+	
+	&__text--prot { 
+		color: $cf-red;
+	}
+
+	&__text--phar {
+		color: $cf-green;
+	}
+}
+
+.primaryHeading {
+	color: $cf-white;
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-align: center;
+
+	&__intro {
+		color: rgba($cf-white, .8);
+		font-size: clamp(calc(1.1rem + 1vw), 2.8vh, calc(1.6rem + 1vw));
+		text-transform: capitalize;
+	}
+
+	&__headlineText {
+	font-size: clamp(calc(1.5rem + 1.8vw), 4vh, calc(2.8rem + 1.8vw));
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1;     
+	}
+
+	&__headlineText--prot {
+		color: $cp-red;
+	}
+
+	&__headlineText--phar {
+		color: $cp-green;
+	}
+
+	&__byline {
+		color: $cf-white;
+		font-size: clamp(calc(.5rem + .7vw), 1.6vh, calc(1.8rem + .7vw));
+		font-weight: 400;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	&__paragraph {
+		font-size: clamp(calc(.9rem + 1vw), 2.4vh, calc(2.2rem + 1vw));
+	}
+}
+
+.headingH2Container {
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 1px;
+	text-align: center;
+
+	&__headingH2 {
+		color: $cf-darkBlue;
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(2.6rem, 7vw, 3.2rem);
+
+		letter-spacing: 2px;  
+
+		@include respond(tab-land) {
+			font-size: clamp(2.6rem, 3vw, 3.6rem);
+		}   
+	}
+
+	 &__subheadingH2 {
+	 	color: $cf-darkGreen;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1rem, 2.2vw, 2.2rem);
+		font-weight: 900;
+
+		@include respond(tab-land) {
+			font-size: clamp(1rem, 2vw, 2.6rem);
+		}
+	 }
+}
+
+.headingH3Container {
+	text-align: center;
+
+	// tablet portrait 
+	@media (min-width: 600px) {
+		text-align: left;
+	}
+
+	&__headingH3 {
+		color: $cf-blue;
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;   
+
+		@include respond(tab-land) {
+			font-size: clamp(1.9rem, 2.3vw, 2.9rem);
+		}    
+	}	 
+}
+
+.headingH4Container {
+	text-align: center;
+	&__headingH4 {
+		color: $cf-darkBlue;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;     
+	}
+
+	&__headingH4--contact {
+		color: $cf-darkGreen;
+		font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		}
+	}
+
+	&__headingH4--slide {
+		color: $cf-darkGreen;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	&__headingH4--cardPhoto {
+		color: $cf-white;
+		font-size: clamp(1.15rem, 2.15vw, 2.15rem);
+		font-weight: 600;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		text-align: left;
+
+		@include respond(tab-land) {
+			font-size: clamp(.35rem, 1.85vw, 1.35rem);
+		}
+	}
+}
+
+.headingH5Container {
+	text-align: center;
+	&__headingH5 {
+		color: $cf-darkBlue;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2rem;
+		font-weight: 700;  
+		line-height: 1;
+		letter-spacing: 1px;   
+	}
+
+	&__headingH5--contact {
+		font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
+		
+		// tablet portrait
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
+		}
+	}
+
+	&__headingH5--slide {
+		color: $cf-green;
+		text-transform: lowercase;
+		text-align: left;
+	}
+
+	&__headingH5--cardPhoto {
+		color: $cf-lightGrey;
+		font-size: clamp(1rem, 2vw, 2rem);
+		font-weight: 600;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		text-align: left;
+
+		@include respond(tab-land) {
+			font-size: clamp(.20rem, 1.70vw, 1.20rem);
+		}
+	}
+}
+
+.headingSlideContainer {
+	text-align: center;
+	line-height: 1;
+	letter-spacing: 1px;
+	
+	&__headingH4--slide {
+		color: $cf-darkGreen;
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+		font-weight: 700;
+		letter-spacing: 0px;
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		}
+	}
+
+	&__headingH5--slide {
+		color: $cf-darkGreen;
+		font-family: 'Lato', sans-serif;
+		font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
+		font-weight: 900;  
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
+		}
+	}
+}
+
+
+
+.paragraph {
+	color:  $cf-darkBlue;
+	font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+	font-weight: 400;
+	text-align: center;
+
+	@include respond(tab-port) {
+		text-align: left;
+	}
+
+	@include respond(tab-land) {
+		font-size: clamp(calc(.9rem + .8vw), 2vh, calc(1.4rem + .8vw));
+	}
+
+	&--slide {
+		font-size: clamp(calc(1rem + 1vw), 1.2vh, calc(1.2rem + 1vw));
+		text-align: left;
+
+		@include respond(tab-land) {
+		font-size: clamp(calc(.9rem + .8vw), 2vh, calc(1.4rem + .8vw));
+	}
+	}
+
+	&--dispensaryIntro {
+		margin: 0 auto;
+		max-width: 45rem;
+
+		// tablet portrait
+		@media (min-width: 600px) {
+			min-width: 100%;
+		}
+	}
+
+	&--dispensary, &--counterMeds, &--clinicHero {
+		color:  $cf-darkBlue;
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
+
+	&--dispensary, &--counterMeds {
+		text-align: center;
+
+		// tablet portrait 
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+	}
+
+	&--clinicContent {
+	}
+
+	&--detail {
+		font-weight: 700;
+
+		//tablet portrait 
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+	}
+
+	&--tradingHoursIntro, &--gpsAddressIntro {
+	
+	}
+
+	&--tradingHoursWeekday, &--gpsAddressParHeading {
+		font-family: 'Montserrat', sans-serif;
+		color: $cf-darkGreen;
+		font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+		font-weight: 900;
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		}
+	}
+
+	&--tradingHoursTimes, &--gpsAddressParDetails {
+		font-weight: 700;
+	}
+
+	&--gpsAddressParDetails {
+		text-decoration: underline 2px;
+		text-underline-offset: 3px;
+	} 
+
+	&--contactForm {
+		font-weight: 900;
+		text-align: left;
+	}
+
+	&--photoCollageCard {
+		color: $cf-white;
+		line-height: 1.4;
+		font-size: clamp(1rem, 2.5vw, 1.4rem);
+		text-align: left;
+
+		@include respond(tab-port) {
+			font-size: clamp(.8rem, 2vw, 1.5rem);
+		}
+
+		@include respond(tab-land) {
+			font-size: clamp(.55rem, 1.15vw, 1.2rem);
+		}
+
+		@include respond(desk) {
+			line-height: 1.125;
+			font-size: clamp(.7rem, .95vw, 1.2rem);
+		}
+	}
+
+	&--photoCollageCardFirstAndSecond {
+		color: $cf-white;
+		line-height: 1.4;
+		font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+		text-align: left;
+	}
+}
+
+.btn {
+	font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+	font-weight:700;
+	letter-spacing: 1px;
+	
+	&--primary-blue {
+		color: $cf-white;
+	}
+
+	&--primary-white {
+		color: $cf-darkGreen;
+	}
+
+	&--cardPhotoButtonText {
+		color: $cf-white;
+		font-size: clamp(1.2rem, 2vw, 2.2rem);
+
+		@include respond(tab-land) {
+			font-size: clamp(.8rem, 1.2vw, 2rem);
+		}
+
+		@include respond(desk) {
+			font-size: clamp(.75rem, 1.1vw, 1.4rem);
+		}
+	}
+
+	&--cardPhotoBackBtn {
+		color: $cf-green;
+		font-size: .8rem;
+		font-weight: 900;
+		line-height: .3;
+	}
+}
+
+.navList {
+	&__navLink {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+        font-weight: 900;
+	}
+}
+
+.navListSecondary {
+	&__navLink {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+        font-weight: 900;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+		@media (min-width: 500px) {
+			font-size: clamp(calc(1.15rem + .8vw), 2.3vh, calc(3.5rem + .8vw));
+		}
+		
+		@media (min-width: 1200px) {
+			font-size: clamp(calc(1.15rem + 1vw), 2.3vh, calc(3.5rem + 1vw));
+		}
+
+		@media (min-height: 800px) {
+			font-size: clamp(calc(1.15rem + .5vw), 2.6vh, calc(3.5rem + .6vw));
+		}
+
+		@media (min-width: 1200px) and (min-height: 800px) {
+			font-size: clamp(calc(1.15rem + 1vw), 2.6vh, calc(3.5rem + 1vw));
+		}
+	}
+}
+
+.importantInfoSection {
+	&__linkText {
+		color: $cf-darkBlue;
+        font-size: clamp(calc(1.15rem + .5vw), 2.1vh, calc(1.65rem + .5vw));
+        font-weight: 900;
+		line-height: 1;
+		text-align: center;
+		background-clip: text;
+        -webkit-background-clip: text;
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.95rem + .5vw), 1.9vh, calc(1.45rem + .5vw));
+		}
+	}
+}
+
+.footer {
+	font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+	font-weight: 400;
+	line-height: 1.2;
+	
+	&__legal {
+		color: $cf-red;
+		line-height: 1;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+
+	&__copyright {
+		color: $cf-green;
+	}
+
+	&__schalk {
+		color: $cf-grey;
+		font-size: clamp(calc(.9rem + .6vw), 1.8vh, calc(1.4rem + .6vw));
+
+		&--name {
+			color: inherit;
+			font-weight: 700;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+
+	&__schalk--name, &__schalk--arrow {
+        color: $cf-white;
+    }
+}
+
+.termsAndConditions {
+	&__h2 {
+		color: $cf-green;
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(2.2rem, 7vw, 2.6rem);
+		font-weight: 900;
+		text-align: center;
+		line-height: 1;
+		letter-spacing: 2px;
+		margin: 4rem 0 2rem;
+	}
+	
+	&__h3 {
+		color: $cf-green;
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
+		font-weight: 900;
+		text-align: center;
+		line-height: 1;
+		letter-spacing: 2px;
+		margin: 4rem 0 2rem;
+	}
+
+	&__p {
+		color:  $cf-white;
+		font-family: 'Lato', sans-serif;
+		font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		font-weight: 400;
+		text-align: justify;
+		margin: 0 0 .5rem;
+	}
 }

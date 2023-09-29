@@ -1,3 +1,13 @@
 .socialMedia {
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 75%;
+
+
+    &__icon {
+        width: clamp(3.5rem, 11vw, 9rem);
+        height: clamp(3.5rem, 11vw, 9rem);
+    }
 }
