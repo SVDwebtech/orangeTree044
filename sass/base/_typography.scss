@@ -1,5 +1,10 @@
+// font-family: 'Lato', sans-serif;  --> body text
+// font-family: 'Open Sans', sans-serif;  --> H3 & H4
+// font-family: 'Lilita One', cursive;  --> H2
+// font-family: 'Rum Raisin', sans-serif;  --> H1
+
 body {
-	color: $cf-darkGrey;
+	color: $cf-darkBlue;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -7,47 +12,9 @@ body {
 
 }
 
-.heading-h1 {}
-.heading-h2 {}
-.heading-h3 {}
-.heading-h4 {}
-
-.paragraph {
-	
-}
-
-.btn {
-	
-}
-
-
-
-.navbar {
-	
-}
-
-.header	{
-	
-}
-
-.about {
-	
-}
-
-.portfolio {
-	
-}
-
-	
-
-.footer {
-	
-}
-
-
-
-
-
-.form {
+.headingH2 {
+	font-family: 'Lilita One', cursive;
+	color: $cf-darkBlue;
+	font-size: 5rem;
 	
 }
