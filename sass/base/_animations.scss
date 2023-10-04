@@ -20,23 +20,23 @@
 
 @keyframes animateNavItemsMoveIn {
   0% {
-    transform: translateX(150px);
+    transform: translateY(25px);
   }
 
   100% {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
 
 @keyframes animateNavItemsMoveOut {
   0% {
-    transform: translateX(0px);
+    // transform: translateX(0px);
     opacity: 1;
   }
 
   100% {
-    transform: translateX(200px);
+    // transform: translateX(200px);
     opacity: 0;
   }
 }
