@@ -1,25 +1,33 @@
 .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
 
-    gap: .25rem;
-
-    // position: relative;
-    // z-index: 100;
+    // gap: -1rem;
+    position: relative;
 
     &__img {        
-        display: block;
+        display: inline;
         height: auto;
-        width: clamp(calc(3.75rem + 1.8vw), 3.5vh, calc(4.75rem + 1.8vw));
+        width: 4.5rem;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 100;
     }
 
     &__text {
-        display: flex;
-        justify-content: flex-end;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
 
-        gap: .5rem;
+        gap: 0rem;
+
+        margin: 0.1rem 0 0 4.2rem;
     }
 }
