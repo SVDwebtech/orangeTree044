@@ -2574,7 +2574,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #001D36;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   visibility: hidden;
   opacity: 0;
   position: fixed;
@@ -2586,7 +2586,7 @@ body {
 }
 @media (min-width: 37.5em) {
   .navbarSection {
-    padding: 0.5rem 4rem;
+    padding: 1rem 4rem;
   }
 }
 @media (min-width: 2000px) {
