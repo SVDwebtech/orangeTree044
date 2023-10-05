@@ -226,7 +226,7 @@ hamburgerBtn.addEventListener('click', () => {
     }, 500);
     
     if(window.scrollY < 200 && !hamburgerMenu.classList.contains('navList--displayNone')){
-      footer.style.position = "fixed";
+      // footer.style.position = "fixed";
       navbar.style.visibility = "hidden";
       navbar.style.opacity = "0";
       navbar.classList.remove('navbar--background');
@@ -282,7 +282,7 @@ window.onscroll = () => {
   setTimeout(() => {
     if(window.scrollY > 200) 
     {  
-      footer.style.position = "static";
+      // footer.style.position = "static";
       navbar.style.visibility = "visible";
       navbar.style.opacity = "1";
       navbar.classList.add('navbar--background');
@@ -290,7 +290,7 @@ window.onscroll = () => {
 
     else if(window.scrollY < 200 && hamburgerMenu.classList.contains('navList--displayNone'))
     {
-      footer.style.position = "fixed";
+      // footer.style.position = "fixed";
       navbar.style.visibility = "hidden";
       navbar.style.opacity = "0";
       navbar.classList.remove('navbar--background');
@@ -334,7 +334,7 @@ for(let item of navItems) {
 
     setTimeout(() => {
       if(window.scrollY < 200 ){
-        footer.style.position = "fixed";
+        // footer.style.position = "fixed";
         navbar.style.visibility = "hidden";
         navbar.style.opacity = "0";
         navbar.classList.remove('navbar--background');
