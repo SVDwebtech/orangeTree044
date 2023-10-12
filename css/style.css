@@ -1853,11 +1853,7 @@ body {
   gap: 5rem;
   padding: 2rem 1rem 0;
 }
-@media (min-width: 600px) {
-  .main {
-    padding: 2rem 4rem 0;
-  }
-}
+
 .promotionSection {
   display: flex;
   flex-direction: column;
