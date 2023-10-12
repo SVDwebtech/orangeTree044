@@ -1,15 +1,11 @@
 .btn {  
-    background-color: $cp-darkBlue;
-    border-top: 2px solid $cp-darkGrey;
-    border-left: 2px solid $cp-grey;
-    border-bottom: 2px solid $cp-lightGrey;
-    border-right: 2px solid $cp-light;
+    border: 2px solid $cp-white;
     border-radius: .45rem;
     box-shadow: $bs-btn;
 
     width: fit-content;
 
-    padding: .25em 1em;
+    padding: .65em 1em;
     margin: 0 auto;
 
     cursor: pointer;
@@ -21,10 +17,6 @@
         transform: translateY(0px);
     }
 
-    .photoCollage__cardPhoto:hover & {
-        transform: translateY(-2px);
-    }
-
     &:active {
         border-bottom: 2px solid $cp-grey;
         border-right: 2px solid $cp-grey;
@@ -32,64 +24,12 @@
         transform: translateY(-1px);
     }
 
-    &--primary-blue {
-        background-color: rgba($cp-darkBlue, .85);
+    &--primary-orange {
+        background-color: $cp-orangeRed;
     }
 
     &--primary-white {
-        background-color: rgba($cp-white, .85);
-    }
-
-    &--getDirections {
-        
-    }
-
-    &--cardPhotoBtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        gap: .5rem;
-
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-
-        width: fit-content;
-
-        padding: 0 0 .25rem;
-        margin: 0 auto 0 0;
-
-        cursor: pointer;
-        backface-visibility: hidden;
-        transition: all .2s;
-    }
-
-    &--cardPhoto:hover &__cardPhotoBtn {
-        box-shadow: none;
-    }
-
-    &--cardPhotoBackBtn {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        gap: .25rem;
-
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-
-        width: fit-content;
-
-        padding: 0 0 .25rem;
-        margin: 0 auto 0 0;
-
-        cursor: pointer;
-        backface-visibility: hidden;
-        transition: all .2s;
+        background-color: $cp-white, .85;
+        border: 2px solid $cp-orangeRed;
     }
 }
