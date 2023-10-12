@@ -186,7 +186,7 @@ legal.addEventListener('click', () => {
 /////////////////////////////////////////////////////////////////////////////////////////
 
 let footerHeight = footer.offsetHeight;
-hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
+// hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 console.log(`${window.innerHeight - footerHeight}px`);
 
 let height = navbar.offsetHeight;
@@ -203,7 +203,7 @@ visualViewport.addEventListener("resize", () => {
 
 window.addEventListener('resize', function(){
   footerHeight = footer.offsetHeight;
-  hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
+  // hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 });
 
 hamburgerBtn.addEventListener('click', () => {
