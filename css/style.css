@@ -286,23 +286,13 @@ body {
 .headingH3Container {
   text-align: center;
 }
-@media (min-width: 600px) {
-  .headingH3Container {
-    text-align: left;
-  }
-}
 .headingH3Container__headingH3 {
-  color: #00538a;
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.9rem, 5.2vw, 2.5rem);
-  font-weight: 700;
+  color: #001D36;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+  font-weight: 900;
   line-height: 1;
   letter-spacing: 1px;
-}
-@media (min-width: 56.25em) {
-  .headingH3Container__headingH3 {
-    font-size: clamp(1.9rem, 2.3vw, 2.9rem);
-  }
 }
 
 .headingH4Container {
@@ -913,11 +903,6 @@ body {
 
 .headingH3Container {
   position: relative;
-}
-@media (min-width: 37.5em) {
-  .headingH3Container__br--counterMeds {
-    display: none;
-  }
 }
 
 .headingSlideContainer {
@@ -1752,15 +1737,15 @@ body {
   display: none;
 }
 
-.socialMedia {
+.socialMediaNavList {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 75%;
+  gap: clamp(2rem, 6vw, 5rem);
 }
-.socialMedia__icon {
-  width: clamp(3.5rem, 11vw, 9rem);
-  height: clamp(3.5rem, 11vw, 9rem);
+.socialMediaNavList__socialMediaNavIcon {
+  width: clamp(3rem, 6vw, 5rem);
+  height: clamp(3rem, 6vw, 5rem);
 }
 
 .teamMember {
@@ -1851,53 +1836,15 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   gap: 5rem;
-  padding: 2rem 1rem 0;
+  padding: 5rem 1rem 0;
 }
 
-.promotionSection {
+.socialMediaSection {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
-}
-.promotionSection__promotionTextAndFlipbookContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-@media (min-width: 56.25em) {
-  .promotionSection__promotionTextAndFlipbookContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 4rem;
-  }
-}
-.promotionSection__paragraph {
-  margin: 3rem 0 3rem;
-}
-@media (min-width: 56.25em) {
-  .promotionSection__paragraph {
-    flex: 0 0 30%;
-  }
-}
-.promotionSection__promotionContainer {
-  margin-bottom: 3rem;
-}
-@media (min-width: 500px) {
-  .promotionSection__promotionContainer {
-    margin: 0 auto 3rem;
-    max-width: min(80%, 650px);
-  }
-}
-@media (min-width: 56.25em) {
-  .promotionSection__promotionContainer {
-    max-width: 500px;
-    margin: 3rem auto 0 0;
-  }
 }
 
 .aboutSection {

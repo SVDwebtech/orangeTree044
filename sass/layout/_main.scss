@@ -6,54 +6,16 @@
 
     gap: 5rem;
 
-    padding: 2rem 1rem 0;
+    padding: 5rem 1rem 0;
 }
 
-.promotionSection {
+.socialMediaSection {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
 
-    &__promotionTextAndFlipbookContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        gap: 2rem;
-        
-        @include respond(tab-land) {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: stretch;
-
-            gap: 4rem;
-        }
-    }
-
-    &__paragraph {
-        margin: 3rem 0 3rem;
-
-        @include respond(tab-land) {
-            flex: 0 0 30%;
-        }
-    } 
-
-    &__promotionContainer {
-        margin-bottom: 3rem;
-
-        @media (min-width: 500px) {
-            margin: 0 auto 3rem;
-            max-width: min(80%, 650px);
-        }
-
-        @include respond(tab-land) {
-            max-width: 500px;
-            margin: 3rem auto 0 0;
-        }
-    }
+    gap: 2rem;
 }
 
 .aboutSection {

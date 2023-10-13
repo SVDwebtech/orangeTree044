@@ -123,22 +123,13 @@ body {
 .headingH3Container {
 	text-align: center;
 
-	// tablet portrait 
-	@media (min-width: 600px) {
-		text-align: left;
-	}
-
 	&__headingH3 {
-		color: $cf-blue;
-		font-family: 'Montserrat', sans-serif;
-		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
-		font-weight: 700;
+		color: $cf-darkBlue;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+		font-weight: 900;
 		line-height: 1;
-		letter-spacing: 1px;   
-
-		@include respond(tab-land) {
-			font-size: clamp(1.9rem, 2.3vw, 2.9rem);
-		}    
+		letter-spacing: 1px;     
 	}	 
 }
 

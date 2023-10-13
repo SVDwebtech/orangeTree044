@@ -280,12 +280,6 @@
 
 .headingH3Container {
     position: relative;
-
-    &__br--counterMeds {
-        @include respond(tab-port) {
-            display: none;
-        }
-    }
 }
 
 .headingSlideContainer {
