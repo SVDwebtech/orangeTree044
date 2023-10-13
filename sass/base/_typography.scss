@@ -91,33 +91,18 @@ body {
 }
 
 .headingH2Container {
-	font-weight: 700;
-	line-height: 1;
-	letter-spacing: 1px;
-	text-align: center;
 
 	&__headingH2 {
 		color: $cf-darkBlue;
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Lilita One', cursive;
 		font-size: clamp(2.6rem, 7vw, 3.2rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;
+		text-align: center;
 
 		letter-spacing: 2px;  
-
-		@include respond(tab-land) {
-			font-size: clamp(2.6rem, 3vw, 3.6rem);
-		}   
 	}
-
-	 &__subheadingH2 {
-	 	color: $cf-darkGreen;
-		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1rem, 2.2vw, 2.2rem);
-		font-weight: 900;
-
-		@include respond(tab-land) {
-			font-size: clamp(1rem, 2vw, 2.6rem);
-		}
-	 }
 }
 
 .headingH3Container {
