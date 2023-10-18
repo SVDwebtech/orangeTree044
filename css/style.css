@@ -646,6 +646,7 @@ body {
 
 .cardAbout {
   background-color: purple;
+  padding: 2rem;
 }
 
 @media (min-width: 37.5em) {
