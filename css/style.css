@@ -644,6 +644,10 @@ body {
   border: 2px solid #e94104;
 }
 
+.cardAbout {
+  background-color: purple;
+}
+
 @media (min-width: 37.5em) {
   .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
     display: flex;
@@ -1684,6 +1688,14 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+}
+
+.aboutSection .cardAboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbarSection {
