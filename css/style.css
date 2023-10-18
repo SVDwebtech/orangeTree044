@@ -396,86 +396,6 @@ body {
 .paragraph--heroSection {
   color: #f0f0f0;
 }
-.paragraph--dispensaryIntro {
-  margin: 0 auto;
-  max-width: 45rem;
-}
-@media (min-width: 600px) {
-  .paragraph--dispensaryIntro {
-    min-width: 100%;
-  }
-}
-.paragraph--dispensary, .paragraph--counterMeds, .paragraph--clinicHero {
-  color: #001D36;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.paragraph--dispensary, .paragraph--counterMeds {
-  text-align: center;
-}
-@media (min-width: 600px) {
-  .paragraph--dispensary, .paragraph--counterMeds {
-    text-align: left;
-  }
-}
-.paragraph--detail {
-  font-weight: 700;
-}
-@media (min-width: 600px) {
-  .paragraph--detail {
-    text-align: left;
-  }
-}
-.paragraph--tradingHoursWeekday, .paragraph--gpsAddressParHeading {
-  font-family: "Montserrat", sans-serif;
-  color: #225f01;
-  font-size: clamp(1.1rem + 1vw, 2.5vh, 1.6rem + 1vw);
-  font-weight: 900;
-}
-@media (min-width: 56.25em) {
-  .paragraph--tradingHoursWeekday, .paragraph--gpsAddressParHeading {
-    font-size: clamp(0.9rem + 1vw, 2.3vh, 1.4rem + 1vw);
-  }
-}
-.paragraph--tradingHoursTimes, .paragraph--gpsAddressParDetails {
-  font-weight: 700;
-}
-.paragraph--gpsAddressParDetails {
-  text-decoration: underline 2px;
-  text-underline-offset: 3px;
-}
-.paragraph--contactForm {
-  font-weight: 900;
-  text-align: left;
-}
-.paragraph--photoCollageCard {
-  color: #f0f0f0;
-  line-height: 1.4;
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
-  text-align: left;
-}
-@media (min-width: 37.5em) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(0.8rem, 2vw, 1.5rem);
-  }
-}
-@media (min-width: 56.25em) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(0.55rem, 1.15vw, 1.2rem);
-  }
-}
-@media (min-width: 75em) {
-  .paragraph--photoCollageCard {
-    line-height: 1.125;
-    font-size: clamp(0.7rem, 0.95vw, 1.2rem);
-  }
-}
-.paragraph--photoCollageCardFirstAndSecond {
-  color: #f0f0f0;
-  line-height: 1.4;
-  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  text-align: left;
-}
 
 .btn {
   font-family: "Open Sans", sans-serif;
@@ -1162,14 +1082,6 @@ body {
   animation: animateNavItemsMoveOut 0.3s ease-in forwards;
 }
 
-.paragraph {
-  margin-bottom: 1rem;
-}
-
-.paragraph:last-of-type {
-  margin-bottom: 0rem;
-}
-
 .pharmacyDepartment {
   display: flex;
   flex-direction: column;
@@ -1735,7 +1647,21 @@ body {
   gap: 2rem;
 }
 
-.aboutSection .cardAboutContainer {
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.aboutSection .sectionContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.aboutSection .managementContentContainer, .aboutSection .teamContentContainer, .aboutSection .cardAboutContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;

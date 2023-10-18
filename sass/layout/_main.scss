@@ -19,13 +19,38 @@
 }
 
 .aboutSection {
-    .cardAboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    .sectionContentContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        gap: 2rem;
+    }
 
+    .managementContentContainer, .teamContentContainer, .cardAboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
         gap: 1rem;
     }
+
+    // .cardAboutContainer {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+
+    //     gap: 2rem;
+    // }
 }
 
