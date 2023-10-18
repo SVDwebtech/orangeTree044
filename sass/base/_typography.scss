@@ -388,6 +388,21 @@ body {
 	}
 }
 
+.cardAbout {
+	.cardAboutFigure {
+        &__caption {
+			color: $cf-white;
+			font-family: 'Open Sans', sans-serif;
+			font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+			font-weight: 800;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			text-decoration: underline;
+			text-underline-offset: 2px;
+        }
+    }
+}
+
 .importantInfoSection {
 	&__linkText {
 		color: $cf-darkBlue;

@@ -527,6 +527,17 @@ body {
   }
 }
 
+.cardAbout .cardAboutFigure__caption {
+  color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .importantInfoSection__linkText {
   color: #001D36;
   font-size: clamp(1.15rem + 0.5vw, 2.1vh, 1.65rem + 0.5vw);
@@ -645,7 +656,40 @@ body {
 }
 
 .cardAbout {
-  background-color: purple;
+  border: 2px solid #6CB347;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.cardAbout .cardAboutFigure {
+  background: linear-gradient(to top right, #005aa7 55%, rgba(240, 240, 240, 0.1) 100%);
+  border-bottom: 2px solid #6CB347;
+  position: relative;
+}
+.cardAbout .cardAboutFigure__image {
+  width: 100%;
+  height: 100%;
+}
+.cardAbout .cardAboutFigure__figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.cardAbout .cardAboutFigure::before {
+  content: "";
+  background: linear-gradient(to top, #001d36 5%, rgba(0, 0, 0, 0.1) 45%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.cardAbout .paragraph {
   padding: 2rem;
 }
 
