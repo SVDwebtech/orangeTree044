@@ -308,6 +308,21 @@ body {
     }
 }
 
+.cardGoogleReviews {
+	&__headingH4 {
+		color: $cf-darkBlue;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.8rem, 5.5vw, 2rem);
+		font-weight: 800;
+		line-height: 1;
+		letter-spacing: 1px;  
+	}
+
+	&__paragraph {
+		font-weight: 700;
+	}
+}
+
 .importantInfoSection {
 	&__linkText {
 		color: $cf-darkBlue;

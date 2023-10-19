@@ -458,6 +458,18 @@ body {
   text-underline-offset: 2px;
 }
 
+.cardGoogleReviews__headingH4 {
+  color: #001D36;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.8rem, 5.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.cardGoogleReviews__paragraph {
+  font-weight: 700;
+}
+
 .importantInfoSection__linkText {
   color: #001D36;
   font-size: clamp(1.15rem + 0.5vw, 2.1vh, 1.65rem + 0.5vw);
@@ -611,6 +623,38 @@ body {
 }
 .cardAbout .paragraph {
   padding: 2rem;
+}
+
+.cardGoogleReviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #6CB347;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.cardGoogleReviews__paragraph {
+  position: relative;
+  background-color: transparent;
+  z-index: 100;
+}
+.cardGoogleReviews__paragraph::after {
+  content: "";
+  display: block;
+  background-image: url("../../img/SvgIcons/quoteIcon.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -2rem;
+  left: 0rem;
+  z-index: -100;
+  opacity: 0.2;
 }
 
 @media (min-width: 37.5em) {
@@ -1668,7 +1712,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.sectionContentContainer__cardGoogleReviewsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .navbarSection {
@@ -1701,6 +1753,17 @@ body {
 .navbar--background {
   background-color: #001d36;
   border-bottom: 1px solid #6CB347;
+}
+
+.paragraph {
+  margin: 0 0 1rem;
+}
+.paragraph--aboutSection {
+  margin: 0;
+}
+
+.paragraph:last-of-type {
+  margin: 0;
 }
 
 body {
