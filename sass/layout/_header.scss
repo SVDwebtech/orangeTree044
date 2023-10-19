@@ -1,3 +1,119 @@
 .header {
     position: relative;
 }
+
+.heroSection {       
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+
+    gap: clamp(1rem, 3vh, 3rem); 
+
+    background-image: url("../../img/Images/OrangeTreeHeroImage.webp");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: clamp(50rem, 100vh, 70rem);
+
+    padding: clamp(1rem, 3vh, 3rem) 1rem 0;
+
+    @media (min-height: 550px) {
+        gap: clamp(3rem, 7vh, 6rem);
+        padding: clamp(3rem, 7vh, 6rem) 1rem 0;
+    }
+
+    .primaryHeading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        gap: clamp(.5rem, 1vh, 1.6rem);
+
+        background-color: $cp-darkBlueTransparent;
+        border-radius: .25rem;
+
+        max-width: 45rem;
+
+        padding: 1rem;
+        
+        &__headAndBylineContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        &__headline {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            gap: .5rem; 
+
+            margin-left: 5rem; 
+
+            position: relative;  
+        }
+
+        &__headlineImage {
+            width: 6rem;
+
+            position: absolute;
+            top: -.45rem;
+            left: -5.5rem;
+        }
+
+        &__headlineText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 0rem;
+        }
+
+        &__headlineTextMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 0rem;
+        }
+
+        &__hr {
+            border: none;
+            width: 100%;
+            height: 1px;
+
+            border-bottom: 1px solid $cp-green;
+            
+            margin: .25rem 0;
+        }
+    }
+
+    &__contentContainer {
+        background-color: $cp-darkBlueTransparent;
+        border-radius: .25rem;
+
+        max-width: 45rem;
+
+        padding: 1rem;
+    }
+
+    &__buttonsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: clamp(1rem, 2vh, 4rem);
+    }
+}
+
+

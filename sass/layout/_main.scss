@@ -6,7 +6,10 @@
 
     gap: 5rem;
 
+    width: min(100%, 45rem);
+
     padding: 5rem 1rem;
+    margin: 0 auto;
 }
 
 .socialMediaSection {
@@ -43,14 +46,5 @@
         
         gap: 1rem;
     }
-
-    // .cardAboutContainer {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     gap: 2rem;
-    // }
 }
 
