@@ -1,0 +1,11 @@
+.paragraph {
+    margin: 0 0 1rem;
+
+    &--aboutSection {
+        margin: 0;
+    }
+}
+
+.paragraph:last-of-type {
+    margin: 0;
+}
