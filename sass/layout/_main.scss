@@ -21,7 +21,7 @@
     gap: 2rem;
 }
 
-.aboutSection, .googleReviewsSection {
+.aboutSection, .googleReviewsSection, .contactUsSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +41,17 @@
 
 .aboutSection {
     .managementContentContainer, .teamContentContainer, .cardAboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 2rem;
+    }
+}
+
+.contactUsSection {
+    .contactUsDetailsContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;

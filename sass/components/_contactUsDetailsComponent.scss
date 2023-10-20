@@ -1,0 +1,25 @@
+.contactUsDetailsComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: .5rem;
+    }
+
+    &__contactUsIcon {
+        width: 3.2rem;
+    }
+
+    &__paragraph {
+        width: 75%
+    }
+}

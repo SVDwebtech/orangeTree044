@@ -323,20 +323,8 @@ body {
 	}
 }
 
-.importantInfoSection {
-	&__linkText {
-		color: $cf-darkBlue;
-        font-size: clamp(calc(1.15rem + .5vw), 2.1vh, calc(1.65rem + .5vw));
-        font-weight: 900;
-		line-height: 1;
-		text-align: center;
-		background-clip: text;
-        -webkit-background-clip: text;
-
-		@include respond(tab-land) {
-			font-size: clamp(calc(.95rem + .5vw), 1.9vh, calc(1.45rem + .5vw));
-		}
-	}
+.contactUsDetailsComponent {
+	text-align: left;
 }
 
 .footer {
