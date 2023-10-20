@@ -269,10 +269,11 @@ body {
   text-align: center;
 }
 .headingH3Container__headingH3 {
-  color: #001D36;
+  color: #005AA7;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1.6rem, 4.5vw, 1.8rem);
   font-weight: 900;
+  text-transform: capitalize;
   line-height: 1;
   letter-spacing: 1px;
 }
@@ -1702,14 +1703,14 @@ body {
   gap: 2rem;
 }
 
-.aboutSection, .googleReviewsSection, .contactUsSection {
+.aboutSection, .googleReviewsSection, .contactUsSection, .tradingHoursSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.aboutSection .sectionContentContainer, .googleReviewsSection .sectionContentContainer, .contactUsSection .sectionContentContainer {
+.aboutSection .sectionContentContainer, .googleReviewsSection .sectionContentContainer, .contactUsSection .sectionContentContainer, .tradingHoursSection .sectionContentContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -109,10 +109,11 @@ body {
 	text-align: center;
 
 	&__headingH3 {
-		color: $cf-darkBlue;
+		color: $cf-brightBlue;
 		font-family: 'Open Sans', sans-serif;
 		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
 		font-weight: 900;
+		text-transform: capitalize;
 		line-height: 1;
 		letter-spacing: 1px;     
 	}	 
