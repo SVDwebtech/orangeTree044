@@ -1,0 +1,10 @@
+.googleMapsIframe {
+    border: 2px solid $cp-green;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 20px 1px rgba($cp-dark, .45);
+
+    &__map {
+        width: min(100%, 45rem);
+        height: min(45vh, 45rem);
+    }
+}
