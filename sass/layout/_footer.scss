@@ -4,23 +4,13 @@
     justify-content: center;
     align-items: center;
 
-    background-color: $cp-darkBlue;
+    background-color: $cp-white;
 
-    padding: clamp(.25rem, 1vh, .85rem) 1rem;
-    gap: .1rem;
-
-    @media (min-width: 500px) {
-            gap: .35rem;
-    }
-
+    padding: 1rem;
+    
+    gap: .5rem;
 
     opacity: 1;
-
-    // position: fixed;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: 100;
 
     transition: opacity .6s;
 
@@ -29,36 +19,152 @@
         max-width: 2000px;
     }
 
-    &__legal {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    hr {
+        border: none;
+        width: 100%;
+        height: 1px;
 
-        padding: 0;
-        margin: 0;
+        border-bottom: 1px solid $cp-green;
         
-        cursor: pointer;
+        margin: .25rem 0;
     }
 
-    &__copyright {
+    .footerHeroSection {       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; 
+
+        gap: clamp(1rem, 3vh, 3rem); 
+
+        width: 100%;
+        
+        padding: clamp(1rem, 3vh, 3rem) 1rem 0;
+
+        @media (min-height: 550px) {
+            gap: clamp(3rem, 7vh, 6rem);
+            padding: clamp(3rem, 7vh, 6rem) 1rem 0;
+        }
+
+        .primaryHeading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+
+            gap: clamp(.5rem, 1vh, 1.6rem);
+
+            background-color: $cp-darkBlue;
+            border-radius: .25rem;
+
+            max-width: 45rem;
+
+            padding: 2rem 2.2rem;
+            
+            &__headAndBylineContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+            }
+
+            &__headline {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                gap: .5rem; 
+
+                margin-left: 5rem; 
+
+                position: relative;  
+            }
+
+            &__headlineImage {
+                width: 6rem;
+
+                position: absolute;
+                top: -.45rem;
+                left: -5.5rem;
+            }
+
+            &__headlineText {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                gap: 0rem;
+            }
+
+            &__headlineTextMain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                gap: 0rem;
+            }
+
+            &__hr {
+                border: none;
+                width: 100%;
+                height: 1px;
+
+                border-bottom: 1px solid $cp-green;
+                
+                margin: .25rem 0;
+            }
+        }
+
+        &__contentContainer {
+            max-width: 45rem;
+            padding: 1rem;
+        }
+    }
+
+    .socialMediaFooterSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        @media (min-width: 500px) {
-            flex-direction: row;
+        gap: 1rem;
+    }
+
+    .secondaryNavSection {
+        &__secondaryNavList {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             gap: 1rem;
+        }
+	}
+
+    .termsAndConditionsSection {
+        &__legal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: .5rem;
+
+            cursor: pointer;
         }
     }
 
-    &__schalk {
-        cursor: pointer;
-    }
-
-    &__schalk--name {
-
-        margin-left:.25rem;
+    .openAndCloseIcons {
         
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &__icon--displayNone {
+            display: none;
+        }
     }
 }

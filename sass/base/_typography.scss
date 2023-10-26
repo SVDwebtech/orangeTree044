@@ -329,36 +329,46 @@ body {
 }
 
 .footer {
-	font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
-	font-weight: 400;
+	font-size: clamp(1.4rem, 4.2vw, 1.6rem);
+	font-weight: 700;
+	text-align: center;
 	line-height: 1.2;
-	
-	&__legal {
-		color: $cf-red;
-		line-height: 1;
-		text-decoration: underline;
-		text-underline-offset: 3px;
-	}
 
-	&__copyright {
-		color: $cf-green;
-	}
-
-	&__schalk {
-		color: $cf-grey;
-		font-size: clamp(calc(.9rem + .6vw), 1.8vh, calc(1.4rem + .6vw));
-
-		&--name {
-			color: inherit;
-			font-weight: 700;
+	.secondaryNavSection {
+		.secondaryNavList__navItemText {
+			color: $cf-darkBlue;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;	
 			text-decoration: underline;
 			text-underline-offset: 3px;
 		}
 	}
 
-	&__schalk--name, &__schalk--arrow {
-        color: $cf-white;
-    }
+	.termsAndConditionsSection {		
+		&__legal {
+			color: $cf-darkBlue;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;	
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+	
+	.schalkWebDevSection {
+		font-size: clamp(.8rem, 4.2vw, 1rem);
+		&__name {
+			color: $cf-darkBlue;
+			font-family: 'Open Sans', sans-serif;
+			font-size: clamp(1rem, 4.5vw, 1.2rem);
+			font-weight: 700;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+
+		&__arrow {
+			font-weight: 700;
+		}
+	}
 }
 
 .termsAndConditions {
