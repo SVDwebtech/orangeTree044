@@ -459,6 +459,18 @@ body {
   text-underline-offset: 2px;
 }
 
+.cardCarousel__headingH4 {
+  color: #001D36;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.8rem, 5.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.cardCarousel__paragraph {
+  font-weight: 700;
+}
+
 .cardGoogleReviews__headingH4 {
   color: #001D36;
   font-family: "Open Sans", sans-serif;
@@ -620,6 +632,13 @@ body {
 }
 .cardAbout .paragraph {
   padding: 2rem;
+}
+
+.cardCarousel {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
 }
 
 .cardGoogleReviews {

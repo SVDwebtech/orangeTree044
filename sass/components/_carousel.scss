@@ -1,3 +1,31 @@
 .carousel {
-	
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    &__slideWrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &__prev-btn,
+    &__next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__prev-btn {
+        left: 10px;
+    }
+
+    &__next-btn {
+        right: 10px;
+    }
 }
