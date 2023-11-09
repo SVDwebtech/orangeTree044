@@ -257,6 +257,10 @@ body {
 		color: $cf-orangeRed;
 		font-size: clamp(1.3rem, 4.5vw, 1.5rem);
 	}
+
+	&--carousel {
+		font-size: clamp(2rem, 4.5vw, 2.2rem);
+	}
 }
 
 .navList {

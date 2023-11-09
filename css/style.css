@@ -412,6 +412,9 @@ body {
   color: #e94104;
   font-size: clamp(1.3rem, 4.5vw, 1.5rem);
 }
+.btn--carousel {
+  font-size: clamp(2rem, 4.5vw, 2.2rem);
+}
 
 .navList__navLink {
   color: #e94104;
@@ -673,6 +676,35 @@ body {
   opacity: 0.2;
 }
 
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.carousel__buttonWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.carousel__indexWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.carousel__index {
+  background-color: #001d36;
+  border-radius: 100%;
+  width: 7px;
+  height: 7px;
+}
+.carousel__prev-btn, .carousel__next-btn {
+  padding: 0 1.45rem;
+}
 @media (min-width: 37.5em) {
   .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
     display: flex;
