@@ -723,15 +723,17 @@ body {
   align-items: center;
   gap: 1rem;
 }
+.carousel__iconBtn {
+  width: 4rem;
+  height: 4rem;
+}
 .carousel__index {
   background-color: #001d36;
   border-radius: 100%;
   width: 7px;
   height: 7px;
 }
-.carousel__prev-btn, .carousel__next-btn {
-  padding: 0rem 1.8rem;
-}
+
 @media (min-width: 37.5em) {
   .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
     display: flex;

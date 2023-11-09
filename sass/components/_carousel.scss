@@ -48,23 +48,15 @@
         gap: 1rem;
     }
 
+    &__iconBtn {
+        width: 4rem;
+        height: 4rem;
+    }
+
     &__index {
         background-color: $cp-darkBlue;
         border-radius: 100%;
         width: 7px;
         height: 7px;
-    }
-
-    &__prev-btn,
-    &__next-btn {
-        padding: 0rem 1.8rem;
-    }
-
-    &__prev-btn {
-        
-    }
-
-    &__next-btn {
-        
     }
 }
