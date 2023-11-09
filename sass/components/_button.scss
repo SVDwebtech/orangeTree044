@@ -32,4 +32,10 @@
         background-color: $cp-white, .85;
         border: 2px solid $cp-orangeRed;
     }
+
+    &--carousel {
+        background-color: $cp-white;
+        border: 1px solid $cp-darkBlue;
+        box-shadow: none;
+    }
 }

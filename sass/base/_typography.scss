@@ -259,7 +259,8 @@ body {
 	}
 
 	&--carousel {
-		font-size: clamp(2rem, 4.5vw, 2.2rem);
+		color: $cf-darkBlue;
+		font-size: clamp(2.2rem, 4.5vw, 2.4rem);
 	}
 }
 
@@ -340,6 +341,13 @@ body {
 
 	&__paragraph {
 		font-weight: 700;
+	}
+}
+
+.carousel {
+	&__service {
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		line-height: 1.2;
 	}
 }
 

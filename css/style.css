@@ -413,7 +413,8 @@ body {
   font-size: clamp(1.3rem, 4.5vw, 1.5rem);
 }
 .btn--carousel {
-  font-size: clamp(2rem, 4.5vw, 2.2rem);
+  color: #001D36;
+  font-size: clamp(2.2rem, 4.5vw, 2.4rem);
 }
 
 .navList__navLink {
@@ -484,6 +485,11 @@ body {
 }
 .cardGoogleReviews__paragraph {
   font-weight: 700;
+}
+
+.carousel__service {
+  font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+  line-height: 1.2;
 }
 
 .contactUsDetailsComponent {
@@ -598,6 +604,11 @@ body {
   background-color: #f0f0f0, 0.85;
   border: 2px solid #e94104;
 }
+.btn--carousel {
+  background-color: #f0f0f0;
+  border: 1px solid #001d36;
+  box-shadow: none;
+}
 
 .cardAbout {
   border: 2px solid #6CB347;
@@ -685,6 +696,22 @@ body {
   width: 100%;
   margin-bottom: 5rem;
 }
+.carousel__serviceWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.carousel__service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #6CB347;
+  width: 6rem;
+  height: 5rem;
+}
 .carousel__buttonWrapper {
   display: flex;
   justify-content: space-around;
@@ -703,7 +730,7 @@ body {
   height: 7px;
 }
 .carousel__prev-btn, .carousel__next-btn {
-  padding: 0 1.45rem;
+  padding: 0rem 1.8rem;
 }
 @media (min-width: 37.5em) {
   .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
