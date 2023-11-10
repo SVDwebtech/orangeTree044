@@ -26,8 +26,6 @@ const footer = document.querySelector('.footer');
 
 const hero = document.querySelector('.heroSection');
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////
 // cardPhoto variables
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -40,148 +38,23 @@ for(let card of cardPhotos) {
   })
 };
 
+// //////////////////////////////////////////////////////////////////////////////////////////
+// // Terms and Conditions pop-up logic
+// //////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////
-// imageSlider variables
-///////////////////////////////////////////////////////////////////////////////////////
+// const legal = document.querySelector('.footer__legal');
+// const legalOpenIcon = document.querySelector('.openAndCloseIcons__openIcon');
+// const legalCloseIcon = document.querySelector('.openAndCloseIcons__closeIcon');
+// const termsAndConditions = document.querySelector('.termsAndConditions');
 
-// const slides = document.querySelectorAll('.imageSlider__slide');
-// const index = document.querySelectorAll('.imageSlider__index');
-// const leftArrBtn = document.querySelector('.imageSlider__leftArrBtnContainer');
-// const rightArrBtn = document.querySelector('.imageSlider__rightArrBtnContainer');
+// let legalBtnClicked = false;
 
-////////////////////////////////////////////////////////////////////////////////////////
-// imageSlider animation and navigation logic
-////////////////////////////////////////////////////////////////////////////////////////
-
-// let slideIndex = 0
-
-// index[0].style.backgroundColor = "#63d426";
-// index[0].style.border = "1px solid #44c300";
-
-
-// leftArrBtn.addEventListener('click', ()=> {
-//     if(slideIndex < 0) {
-//         slideIndex = 14;
-//     }
-//     slides[slideIndex].classList.remove('animateSlideMifL');
-//     slides[slideIndex].classList.remove('animateSlideMifR');
-//     slides[slideIndex].classList.add('animateSlideMotR');
-
-//     index[slideIndex].style.backgroundColor = "#012e4c";
-//     index[slideIndex].style.border = "1px solid #012e4c";
-
-//     setTimeout(() => {
-//         slides[slideIndex].classList.add('displayNone');
-//         index[slideIndex].style.backgroundColor = "#012e4c";
-//         index[slideIndex].style.border = "1px solid #012e4c";
-//     }, 1000);
-//     setTimeout(() => {
-//         if(slideIndex === 0) {
-//             slideIndex = 15;
-//         }
-//         slides[slideIndex - 1].classList.remove('animateSlideMotR');
-//         slides[slideIndex - 1].classList.remove('animateSlideMotL');
-//         slides[slideIndex - 1].classList.remove('displayNone');
-//         slides[slideIndex - 1].classList.add('displayBlock');
-//         slides[slideIndex - 1].classList.add('animateSlideMifL');
-
-//         index[slideIndex - 1].style.backgroundColor = "#63d426";
-//         index[slideIndex - 1].style.border = "1px solid #44c300";
-
-//         slideIndex -= 1;
-//     }, 1001);
+// legal.addEventListener('click', () => {
+//   footer.style.position = "static";
+//   termsAndConditions.classList.toggle('termsAndConditions-displayNone');
+//   legalOpenIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
+//   legalCloseIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
 // });
-
-// rightArrBtn.addEventListener('click', ()=> {
-//     if(slideIndex > 14) {
-//         slideIndex = 0;
-//     }
-//     slides[slideIndex].classList.remove('animateSlideMifL');
-//     slides[slideIndex].classList.remove('animateSlideMifR');
-//     slides[slideIndex].classList.add('animateSlideMotL');
-
-//     index[slideIndex].style.backgroundColor = "#012e4c";
-//     index[slideIndex].style.border = "1px solid #012e4c";
-
-//     setTimeout(() => {
-//         slides[slideIndex].classList.add('displayNone');
-//         index[slideIndex].style.backgroundColor = "#012e4c";
-//         index[slideIndex].style.border = "1px solid #012e4c";
-//     }, 1000);
-//     setTimeout(() => {
-//         if(slideIndex === 14) {
-//             slideIndex = -1;
-//         }
-//         slides[slideIndex + 1].classList.remove('animateSlideMotL');
-//         slides[slideIndex + 1].classList.remove('animateSlideMotR');
-//         slides[slideIndex + 1].classList.remove('displayNone');
-//         slides[slideIndex + 1].classList.add('displayBlock');
-//         slides[slideIndex + 1].classList.add('animateSlideMifR');
-
-//         index[slideIndex + 1].style.backgroundColor = "#63d426";
-//         index[slideIndex + 1].style.border = "1px solid #44c300"
-
-//         slideIndex += 1;
-//     }, 1001);
-// });
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// product carousel
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// const products = document.querySelectorAll('.product');
-// let productIndex = 0;
-
-// function animateProducts() {
-//   products[productIndex].classList.remove('promotionContainer__displayNone');
-//   products[productIndex].classList.add('promotionContainer__displayBlock');
-//   products[productIndex].classList.add('animateProduct');
-//   productIndex++;
-// }
-
-// products[productIndex].classList.remove('promotionContainer__displayNone');
-// products[productIndex].classList.add('promotionContainer__displayBlock');
-// products[productIndex].classList.add('animateProduct');
-// productIndex++;
-
-// setInterval(() => {
-//     if(productIndex === 10) {
-//         products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
-//         products[productIndex - 1].classList.add('promotionContainer__displayNone');
-//         products[productIndex - 1].classList.remove('animateProduct');
-//         productIndex = 0;
-//     }
-//     if(productIndex === 0) {
-//         products[productIndex].classList.remove('promotionContainer__displayNone');
-//         products[productIndex].classList.add('promotionContainer__displayBlock');
-//         products[productIndex].classList.add('animateProduct');
-//         productIndex++;
-//     } else {
-//         products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
-//         products[productIndex - 1].classList.add('promotionContainer__displayNone');
-//         products[productIndex - 1].classList.remove('animateProduct');
-//         animateProducts();
-//     }
-// }, 6000);
-
-//////////////////////////////////////////////////////////////////////////////////////////
-// Terms and Conditions pop-up logic
-//////////////////////////////////////////////////////////////////////////////////////////
-
-const legal = document.querySelector('.footer__legal');
-const legalOpenIcon = document.querySelector('.openAndCloseIcons__openIcon');
-const legalCloseIcon = document.querySelector('.openAndCloseIcons__closeIcon');
-const termsAndConditions = document.querySelector('.termsAndConditions');
-
-let legalBtnClicked = false;
-
-legal.addEventListener('click', () => {
-  footer.style.position = "static";
-  termsAndConditions.classList.toggle('termsAndConditions-displayNone');
-  legalOpenIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
-  legalCloseIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
-});
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -343,3 +216,11 @@ for(let item of navItems) {
   });
 }
 
+/////////////////////////////////////////////////////////////////////////////////
+// carousel logic
+/////////////////////////////////////////////////////////////////////////////////
+
+const leftBtn = document.querySelector('.leftBtn');
+const rightBtn = document.querySelector('.rightBtn');
+
+leftBtn.style.backgroundColor = "red";
