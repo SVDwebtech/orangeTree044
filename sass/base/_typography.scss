@@ -3,11 +3,6 @@
 // font-family: 'Lilita One', cursive;  --> H2
 // font-family: 'Rum Raisin', sans-serif;  --> H1
 
-// font-family: 'Lato', sans-serif; --> paragraph content
-// font-family: 'Montserrat', sans-serif; --> headings
-// font-family: 'Open Sans', sans-serif; --> subheadings
-// font-family: 'Roboto', sans-serif; --> navlists
-
 body {
 	color: $cf-darkBlue;
 	font-family: 'Lato', sans-serif;
@@ -316,10 +311,11 @@ body {
 
 .cardCarousel {
 	&__headingH4 {
-		color: $cf-darkBlue;
+		color: $cf-blueGrey;
 		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1.8rem, 5.5vw, 2rem);
+		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
 		font-weight: 800;
+		text-transform: uppercase;
 		line-height: 1;
 		letter-spacing: 1px;  
 	}

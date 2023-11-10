@@ -464,10 +464,11 @@ body {
 }
 
 .cardCarousel__headingH4 {
-  color: #001D36;
+  color: #264E71;
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(1.8rem, 5.5vw, 2rem);
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
   font-weight: 800;
+  text-transform: uppercase;
   line-height: 1;
   letter-spacing: 1px;
 }
@@ -649,13 +650,26 @@ body {
 }
 
 .cardCarousel {
-  flex: 0 0 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  border: 2px solid #6CB347;
+  box-shadow: 2px 2px 12px 4px rgba(30, 32, 32, 0.3);
+  min-height: 25rem;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+.cardCarousel__pricingImgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.2rem;
 }
 .cardCarousel__img {
-  width: 4.5rem;
+  width: 4rem;
 }
 
 .cardGoogleReviews {
