@@ -222,5 +222,31 @@ for(let item of navItems) {
 
 const leftBtn = document.querySelector('.leftBtn');
 const rightBtn = document.querySelector('.rightBtn');
+const index = document.querySelectorAll('.index');
+const service = document.querySelectorAll('.service');
 
-leftBtn.style.backgroundColor = "red";
+let counter = 0
+
+leftBtn.addEventListener('click', function(){
+    if(counter === 0){
+      index[counter].classList.remove('highlightIndex');
+      index[index.length - 1].classList.add('highlightIndex');
+      counter = index.length - 1;
+    } else {
+      index[counter].classList.remove('highlightIndex');
+      index[counter - 1].classList.add('highlightIndex');
+      counter--;
+    }
+})
+
+rightBtn.addEventListener('click', function(){
+    if(counter === 3){
+      index[counter].classList.remove('highlightIndex');
+      index[0].classList.add('highlightIndex');
+      counter = 0;
+    } else {
+      index[counter].classList.remove('highlightIndex');
+      index[counter + 1].classList.add('highlightIndex');
+      counter++;
+    }
+})

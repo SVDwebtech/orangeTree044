@@ -66,3 +66,8 @@
     border: 2px solid $cp-darkGreen;
     box-shadow: 1px 1px 6px 2px rgba($cp-dark, .3);
 }
+
+.highlightIndex {
+    background-color: rgba($cp-white, .3);
+    border: 1px solid $cp-dark;
+}

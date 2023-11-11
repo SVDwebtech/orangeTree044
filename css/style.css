@@ -773,6 +773,11 @@ body {
   box-shadow: 1px 1px 6px 2px rgba(30, 32, 32, 0.3);
 }
 
+.highlightIndex {
+  background-color: rgba(240, 240, 240, 0.3);
+  border: 1px solid #1E2020;
+}
+
 @media (min-width: 37.5em) {
   .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
     display: flex;
