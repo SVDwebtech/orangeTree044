@@ -224,6 +224,7 @@ const leftBtn = document.querySelector('.leftBtn');
 const rightBtn = document.querySelector('.rightBtn');
 const index = document.querySelectorAll('.index');
 const service = document.querySelectorAll('.service');
+const card = document.querySelectorAll('.cardCarousel');
 
 let counter = 0
 
@@ -231,10 +232,28 @@ leftBtn.addEventListener('click', function(){
     if(counter === 0){
       index[counter].classList.remove('highlightIndex');
       index[index.length - 1].classList.add('highlightIndex');
+
+      service[counter].classList.remove('highlightBorder');
+      service[service.length - 1].classList.add('highlightBorder');
+
+      card[counter].classList.remove('visible');
+      card[counter].classList.add('hidden');
+      card[card.length - 1].classList.remove('hidden');
+      card[card.length - 1].classList.add('visible');
+
       counter = index.length - 1;
     } else {
       index[counter].classList.remove('highlightIndex');
       index[counter - 1].classList.add('highlightIndex');
+
+      service[counter].classList.remove('highlightBorder');
+      service[counter - 1].classList.add('highlightBorder');
+
+      card[counter].classList.remove('visible');
+      card[counter].classList.add('hidden');
+      card[counter - 1].classList.remove('hidden');
+      card[counter - 1].classList.add('visible');
+
       counter--;
     }
 })
@@ -243,10 +262,28 @@ rightBtn.addEventListener('click', function(){
     if(counter === 3){
       index[counter].classList.remove('highlightIndex');
       index[0].classList.add('highlightIndex');
+
+      service[counter].classList.remove('highlightBorder');
+      service[0].classList.add('highlightBorder');
+
+      card[counter].classList.remove('visible');
+      card[counter].classList.add('hidden');
+      card[0].classList.remove('hidden');
+      card[0].classList.add('visible');
+
       counter = 0;
     } else {
       index[counter].classList.remove('highlightIndex');
       index[counter + 1].classList.add('highlightIndex');
+
+      service[counter].classList.remove('highlightBorder');
+      service[counter + 1].classList.add('highlightBorder');
+
+      card[counter].classList.remove('visible');
+      card[counter].classList.add('hidden');
+      card[counter + 1].classList.add('visible');
+      card[counter + 1].classList.add('hidden');
+
       counter++;
     }
 })
