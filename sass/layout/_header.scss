@@ -113,7 +113,55 @@
         align-items: center;
 
         gap: clamp(1rem, 2vh, 4rem);
+
+        position: relative;
+
+        z-index: 100;
+
+        .loyaltyClubPopUp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 1.5rem;
+            
+            background: linear-gradient(90deg, $cp-green, $cp-orangeRed);
+            border: 2px solid $cp-white;
+            border-radius: 5px;
+
+            width: 120%;
+
+            padding: 1.5rem;
+
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            
+
+            transform: translate(-50%, -40%);
+
+            &__closeX {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: $cp-orangeRed;
+                border: 1px solid $cp-darkBlue;
+                border-radius: 2px;
+                
+                padding: .1rem .45rem .1rem .6rem;
+            }
+        }
     }
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: scal(0);
+
+    z-index: -1000;
 }
 
 

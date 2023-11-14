@@ -287,3 +287,19 @@ rightBtn.addEventListener('click', function(){
       counter++;
     }
 })
+
+/////////////////////////////////////////////////////////////////////////////////
+// loyalty club pop up
+/////////////////////////////////////////////////////////////////////////////////
+
+const loyaltyClubBtn = document.querySelector('.loyaltyClubBtn');
+const loyaltyClubCloseBtn = document.querySelector('.loyaltyClubCloseBtn');
+const loyaltyClubPopUp = document.querySelector('.loyaltyClubPopUp');
+
+loyaltyClubBtn.addEventListener('click', function(){
+  loyaltyClubPopUp.classList.remove('hidden');
+});
+
+loyaltyClubCloseBtn.addEventListener('click', function(){
+  loyaltyClubPopUp.classList.add('hidden');
+});
