@@ -282,7 +282,7 @@ rightBtn.addEventListener('click', function(){
       card[counter].classList.remove('visible');
       card[counter].classList.add('hidden');
       card[counter + 1].classList.add('visible');
-      card[counter + 1].classList.add('hidden');
+      card[counter + 1].classList.remove('hidden');
 
       counter++;
     }
