@@ -366,36 +366,41 @@ body {
 }
 
 .footer {
+	color: $cf-darkBlue;
+	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(1.4rem, 4.2vw, 1.6rem);
 	font-weight: 700;
 	text-align: center;
 	line-height: 1.2;
 
 	.secondaryNavSection {
-		.secondaryNavList__navItemText {
-			color: $cf-darkBlue;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 700;	
+		.secondaryNavList__navItemText {	
 			text-decoration: underline;
 			text-underline-offset: 3px;
 		}
 	}
 
 	.termsAndConditionsSection {		
-		&__legal {
-			color: $cf-darkBlue;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 700;	
+		&__button {	
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			font-weight: inherit;
 			text-decoration: underline;
 			text-underline-offset: 3px;
+		}
+
+		&__closeButton {
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			font-weight: inherit;
 		}
 	}
 	
 	.schalkWebDevSection {
 		font-size: clamp(.8rem, 4.2vw, 1rem);
 		&__name {
-			color: $cf-darkBlue;
-			font-family: 'Open Sans', sans-serif;
 			font-size: clamp(1rem, 4.5vw, 1.2rem);
 			font-weight: 700;
 			text-decoration: underline;
@@ -408,11 +413,11 @@ body {
 	}
 }
 
-.termsAndConditions {
+.tsAndCs {
 	&__h2 {
-		color: $cf-green;
-		font-family: 'Montserrat', sans-serif;
-		font-size: clamp(2.2rem, 7vw, 2.6rem);
+		color: $cf-blueGrey;
+		font-family: 'Lilita One', cursive;
+		font-size: clamp(2rem, 5vw, 2.4rem);
 		font-weight: 900;
 		text-align: center;
 		line-height: 1;
@@ -421,8 +426,8 @@ body {
 	}
 	
 	&__h3 {
-		color: $cf-green;
-		font-family: 'Montserrat', sans-serif;
+		color: $cf-orangeRed;
+		font-family: 'Open Sans', sans-serif;
 		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
 		font-weight: 900;
 		text-align: center;
@@ -432,7 +437,7 @@ body {
 	}
 
 	&__p {
-		color:  $cf-white;
+		color:  $cf-darkBlue;
 		font-family: 'Lato', sans-serif;
 		font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
 		font-weight: 400;

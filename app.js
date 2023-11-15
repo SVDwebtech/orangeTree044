@@ -41,20 +41,20 @@ for(let card of cardPhotos) {
 // //////////////////////////////////////////////////////////////////////////////////////////
 // // Terms and Conditions pop-up logic
 // //////////////////////////////////////////////////////////////////////////////////////////
+const termsAndConditionsBtn = document.querySelector('.termsAndConditionsBtn');
+const tsAndCsCloseBtn = document.querySelector('.termsAndConditionsCloseBtn');
+const tsAndCs = document.querySelector('.tsAndCs');
 
-// const legal = document.querySelector('.footer__legal');
-// const legalOpenIcon = document.querySelector('.openAndCloseIcons__openIcon');
-// const legalCloseIcon = document.querySelector('.openAndCloseIcons__closeIcon');
-// const termsAndConditions = document.querySelector('.termsAndConditions');
+termsAndConditionsBtn.addEventListener('click', function() {
+  if(tsAndCs.classList.contains('hidden')) {
+    tsAndCs.classList.remove('hidden');
+  } 
+});
 
-// let legalBtnClicked = false;
+tsAndCsCloseBtn.addEventListener('click', function() {
+      tsAndCs.classList.add('hidden');
+});
 
-// legal.addEventListener('click', () => {
-//   footer.style.position = "static";
-//   termsAndConditions.classList.toggle('termsAndConditions-displayNone');
-//   legalOpenIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
-//   legalCloseIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
-// });
 
 /////////////////////////////////////////////////////////////////////////////////////////
 

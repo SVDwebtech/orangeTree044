@@ -145,26 +145,69 @@
 	}
 
     .termsAndConditionsSection {
-        &__legal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: .5rem;
+
+        // margin-top: .5rem;
+
+        &__button {
             display: flex;
             justify-content: center;
             align-items: center;
 
             gap: .5rem;
 
+            border: none;
             cursor: pointer;
         }
     }
 
-    .openAndCloseIcons {
-        
-        &__icon {
-            width: 3rem;
-            height: 3rem;
+    .tsAndCs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        background-color: $cp-lightGrey;
+        padding: 0 1rem;
+
+        position: relative;
+
+        &__closeButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 1rem;
+
+            background-color: $cp-lightGrey;
+            border: 2px solid $cp-white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 7px 2px rgba($cp-dark, .3);
+            padding: .5rem 2rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+
+            position: sticky;
+            top: 8rem;
         }
 
-        &__icon--displayNone {
-            display: none;
+        &__xIcon {
+            color: $cf-white;
+            background-color: $cp-red;
+            border: 2px solid $cp-white;
+
+            padding: 0 .5rem .25rem .5rem;
         }
     }
+}
+
+.hidden {
+    display: none;
+    height: 0;
+    overflow: hidden;
 }

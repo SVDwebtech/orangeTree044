@@ -510,31 +510,35 @@ body {
 }
 
 .footer {
+  color: #001D36;
+  font-family: "Open Sans", sans-serif;
   font-size: clamp(1.4rem, 4.2vw, 1.6rem);
   font-weight: 700;
   text-align: center;
   line-height: 1.2;
 }
 .footer .secondaryNavSection .secondaryNavList__navItemText {
-  color: #001D36;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.footer .termsAndConditionsSection__legal {
-  color: #001D36;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+.footer .termsAndConditionsSection__button {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.footer .termsAndConditionsSection__closeButton {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 .footer .schalkWebDevSection {
   font-size: clamp(0.8rem, 4.2vw, 1rem);
 }
 .footer .schalkWebDevSection__name {
-  color: #001D36;
-  font-family: "Open Sans", sans-serif;
   font-size: clamp(1rem, 4.5vw, 1.2rem);
   font-weight: 700;
   text-decoration: underline;
@@ -544,19 +548,19 @@ body {
   font-weight: 700;
 }
 
-.termsAndConditions__h2 {
-  color: #6CB347;
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(2.2rem, 7vw, 2.6rem);
+.tsAndCs__h2 {
+  color: #264E71;
+  font-family: "Lilita One", cursive;
+  font-size: clamp(2rem, 5vw, 2.4rem);
   font-weight: 900;
   text-align: center;
   line-height: 1;
   letter-spacing: 2px;
   margin: 4rem 0 2rem;
 }
-.termsAndConditions__h3 {
-  color: #6CB347;
-  font-family: "Montserrat", sans-serif;
+.tsAndCs__h3 {
+  color: #e94104;
+  font-family: "Open Sans", sans-serif;
   font-size: clamp(1.9rem, 5.2vw, 2.5rem);
   font-weight: 900;
   text-align: center;
@@ -564,8 +568,8 @@ body {
   letter-spacing: 2px;
   margin: 4rem 0 2rem;
 }
-.termsAndConditions__p {
-  color: #f0f0f0;
+.tsAndCs__p {
+  color: #001D36;
   font-family: "Lato", sans-serif;
   font-size: clamp(0.9rem + 1vw, 2.3vh, 1.4rem + 1vw);
   font-weight: 400;
@@ -1795,19 +1799,56 @@ body {
   align-items: center;
   gap: 1rem;
 }
-.footer .termsAndConditionsSection__legal {
+.footer .termsAndConditionsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer .termsAndConditionsSection__button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  border: none;
   cursor: pointer;
 }
-.footer .openAndCloseIcons__icon {
-  width: 3rem;
-  height: 3rem;
+.footer .tsAndCs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #bfbfbf;
+  padding: 0 1rem;
+  position: relative;
 }
-.footer .openAndCloseIcons__icon--displayNone {
+.footer .tsAndCs__closeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #bfbfbf;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px 2px rgba(30, 32, 32, 0.3);
+  padding: 0.5rem 2rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  position: sticky;
+  top: 8rem;
+}
+.footer .tsAndCs__xIcon {
+  color: #f0f0f0;
+  background-color: #CD4536;
+  border: 2px solid #f0f0f0;
+  padding: 0 0.5rem 0.25rem 0.5rem;
+}
+
+.hidden {
   display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 .header {
