@@ -1,7 +1,8 @@
-// font-family: 'Lato', sans-serif;  --> body text
-// font-family: 'Open Sans', sans-serif;  --> H3 & H4
-// font-family: 'Lilita One', cursive;  --> H2
-// font-family: 'Rum Raisin', sans-serif;  --> H1
+// font-family: 'Lato', sans-serif;        --- Body Text
+// font-family: 'Open Sans', sans-serif;   --- H3 & H4
+// font-family: 'Playpen Sans', cursive;   --- H2
+// font-family: 'Rum Raisin', sans-serif;  --- H1
+
 
 body {
 	color: $cf-darkBlue;
@@ -89,14 +90,15 @@ body {
 
 	&__headingH2 {
 		color: $cf-darkBlue;
-		font-family: 'Lilita One', cursive;
-		font-size: clamp(2.6rem, 7vw, 3.2rem);
+		font-family: 'Playpen Sans', cursive;
+		font-size: clamp(2.2rem, 7vw, 2.8rem);
 		font-weight: 700;
 		line-height: 1;
 		letter-spacing: 1px;
+		text-transform: uppercase;
 		text-align: center;
 
-		letter-spacing: 2px;  
+		letter-spacing: 1px;  
 	}
 }
 
