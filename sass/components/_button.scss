@@ -5,7 +5,7 @@
 
     width: fit-content;
 
-    padding: .65em 1em;
+    padding: .60em .85em;
     margin: 0 auto;
 
     cursor: pointer;
@@ -31,6 +31,7 @@
     &--primary-white {
         background-color: $cp-white, .85;
         border: 2px solid $cp-orangeRed;
+        padding: .55em 1.25em;
     }
 
     &--carousel {

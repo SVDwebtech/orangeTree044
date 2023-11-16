@@ -23,19 +23,19 @@ html {
 	}
 
 	@include respond(tab-land) {
-	/* 	13px / 16px *100 = 81.25% */
+	/* 	14px / 16px *100 = 81.25% */
 		// font-size: 81.25%; // 1.4rem = 18.2px 
-		font-size: 62.5%; // 1rem = 10px
+		font-size: 81.25%; // 1rem = 10px
 	}
 
 	@include respond(desk) {
-	/* 	15px / 16px *100 = 93.75% */
-		font-size: 65%; // 1.4rem = 21px
+	/* 	16px / 16px *100 = 100% */
+		font-size: 100%; // 1.4rem = 21px
 	}
 	
 	@include respond(big-desk) {
 	/* 	18px / 16px *100 = 112.5% */
-		font-size: 70%; // 1.4rem = 25.2px
+		font-size: 112.5%; // 1.4rem = 25.2px
 	}
 
 	// background-color: $cp-lightGrey; // This affects the headingH2Container icons
