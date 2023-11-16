@@ -643,10 +643,23 @@ body {
   border-radius: 0.5rem;
   position: relative;
 }
+@media (min-width: 450px) {
+  .cardAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
 .cardAbout .cardAboutFigure {
   background: linear-gradient(to top right, #005aa7 55%, rgba(240, 240, 240, 0.1) 100%);
   border-bottom: 2px solid #6CB347;
   position: relative;
+}
+@media (min-width: 450px) {
+  .cardAbout .cardAboutFigure {
+    flex: 1 0 45%;
+  }
 }
 .cardAbout .cardAboutFigure__image {
   width: 100%;
@@ -673,6 +686,9 @@ body {
   z-index: 0;
 }
 .cardAbout .paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
 }
 
@@ -2022,6 +2038,24 @@ body {
   padding: 5rem 1rem;
   margin: 0 auto;
 }
+@media (min-width: 600px) {
+  .main {
+    width: min(100%, 60rem);
+    padding: 5rem 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .main {
+    width: min(100%, 75rem);
+    padding: 5rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    width: min(100%, 82rem);
+    padding: 5rem 4rem;
+  }
+}
 
 .socialMediaSection {
   display: flex;
@@ -2038,20 +2072,34 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.aboutSection .sectionContentContainer, .googleReviewsSection .sectionContentContainer, .contactUsSection .sectionContentContainer, .tradingHoursSection .sectionContentContainer {
+
+.aboutSection .sectionContentContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
 .aboutSection .managementContentContainer, .aboutSection .teamContentContainer, .aboutSection .cardAboutContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.aboutSection .cardAboutContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+@media (min-width: 900px) {
+  .aboutSection .cardAboutContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .contactUsSection .contactUsDetailsContainer {
