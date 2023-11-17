@@ -340,6 +340,12 @@ body {
 	}
 }
 
+.benefitsList {
+	&__benefitsText {
+		font-weight: 700;
+	}
+}
+
 .cardGoogleReviews {
 	&__headingH4 {
 		color: $cf-darkBlue;

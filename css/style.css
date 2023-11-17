@@ -489,6 +489,10 @@ body {
   font-weight: 700;
 }
 
+.benefitsList__benefitsText {
+  font-weight: 700;
+}
+
 .cardGoogleReviews__headingH4 {
   color: #001D36;
   font-family: "Open Sans", sans-serif;
@@ -2167,6 +2171,33 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+}
+
+.servicesAndPricingSection .benefitsContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.servicesAndPricingSection .benefitsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.servicesAndPricingSection .benefitsList__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+.servicesAndPricingSection .benefitsList__checkmarkIcon {
+  -webkit-text-stroke-color: #e94104;
+}
+.servicesAndPricingSection .benefitsList__benefitsText {
+  padding-bottom: 0.35rem;
 }
 
 .contactUsSection .contactUsDetailsContainer {
