@@ -661,6 +661,11 @@ body {
     flex: 1 0 45%;
   }
 }
+@media (min-width: 1200px) {
+  .cardAbout .cardAboutFigure {
+    flex: 1 0 35%;
+  }
+}
 .cardAbout .cardAboutFigure__image {
   width: 100%;
   height: 100%;
@@ -691,21 +696,54 @@ body {
   align-items: center;
   padding: 2rem;
 }
+@media (min-width: 1200px) {
+  .cardAbout .paragraph {
+    padding: 0 5rem;
+  }
+}
 
 .cardCarousel {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
   border: 2px solid #6CB347;
   box-shadow: 2px 2px 12px 4px rgba(30, 32, 32, 0.3);
-  min-height: 25rem;
+  min-height: 22rem;
   padding: 2rem 1rem;
-  margin: 2rem 0;
+  margin: 3rem 0 2rem;
   position: absolute;
   top: 0;
   left: 0;
+}
+@media (min-width: 600px) {
+  .cardCarousel {
+    min-height: 23rem;
+    padding: 2rem 5rem;
+  }
+}
+@media (min-width: 900px) {
+  .cardCarousel {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    min-height: 18rem;
+    padding: 3rem 2rem;
+  }
+}
+.cardCarousel__imgContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 900px) {
+  .cardCarousel__imgContentContainer {
+    gap: 2rem;
+    min-width: 20rem;
+  }
 }
 .cardCarousel__pricingImgContainer {
   display: flex;
@@ -713,6 +751,13 @@ body {
   justify-content: center;
   align-items: flex-end;
   gap: 1.2rem;
+}
+@media (min-width: 900px) {
+  .cardCarousel__pricingImgContainer {
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-width: 15rem;
+  }
 }
 .cardCarousel__img {
   width: 4rem;
@@ -765,13 +810,35 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   margin-bottom: 5rem;
 }
+@media (min-width: 600px) {
+  .carousel {
+    gap: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .carousel {
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+}
 .carousel__slideWrapper {
-  min-height: 28rem;
+  min-height: 27rem;
   position: relative;
+}
+@media (min-width: 600px) {
+  .carousel__slideWrapper {
+    min-height: 26rem;
+  }
+}
+@media (min-width: 900px) {
+  .carousel__slideWrapper {
+    min-height: 21rem;
+  }
 }
 .carousel__serviceWrapper {
   display: flex;
