@@ -6,6 +6,10 @@
 
     gap: 1rem;
 
+    @media (min-width: 900px) {
+        // align-items: center;
+    }
+
     &__item {
         display: flex;
         flex-direction: row;

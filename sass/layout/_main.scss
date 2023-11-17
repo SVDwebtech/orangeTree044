@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: stretch;
 
-    gap: 5rem;
+    gap: 8rem;
 
     width: min(100%, 45rem);
 
@@ -115,7 +115,46 @@
     }
 }
 
+.googleReviewsSection {
+    &__sectionContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 2rem;
+
+        .cardGoogleReviewsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 2rem;
+
+            @media (min-width: 600px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
 .contactUsSection {
+    &__sectionContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 2rem;
+
+        width: 100%;
+
+        @media (min-width: 900px) {
+            flex-direction: row;
+            gap: 3rem;
+        }
+    }
     .contactUsDetailsContainer {
         display: flex;
         flex-direction: column;
@@ -123,14 +162,11 @@
         align-items: center;
         
         gap: 2rem;
-    }
-}
 
-.sectionContentContainer__cardGoogleReviewsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 2rem;
+        &__buttonsContainer {
+            @media (min-width: 900px) {
+                margin: 0 auto 0 0;
+            }
+        }
+    }
 }
