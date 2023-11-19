@@ -155,43 +155,52 @@
             }
 
             @media (min-width: 1200px) {
-                width: min(100%, 82rem);
+                width: min(100%, 100rem);
+                padding: 0 4rem;
             }
         }
     }
 
     .secondaryNavSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+
         &__secondaryNavList {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            row-gap: 1.5rem;
 
-            gap: 1rem;
+            width: 100%;
 
-            @media (min-width: 900px) {
-                width: min(100%, 75rem);
-                padding: 0 3rem;
-                align-items: start;
-            }
-
-            @media (min-width: 1200px) {
-                width: min(100%, 82rem);
-                padding: 0 3rem;
-            }
-
-            @media (min-width: 900px) {
+            @include respond(tab-land) {
                 flex-direction: row;
                 flex-wrap: wrap;
+                align-items: flex-start;
+                width: min(100%, 75rem);
+                padding: 0 3rem;
 
                 .secondaryNavListNavItem {
-                    flex: 1 0 250px;
+                    flex: 1 0 300px;
                 }
 
                 .secondaryNavListNavTextItem {
                     text-align: left;
                 }
             }
+
+            @media (min-width: 1200px) {
+                width: min(100%, 100rem);
+                padding: 0 4rem;
+            }
+
+            
         }
 	}
 
@@ -203,7 +212,7 @@
 
         gap: .5rem;
 
-        // margin-top: .5rem;
+        padding: 0 1.5rem;
 
         &__button {
             display: flex;
@@ -214,6 +223,24 @@
 
             border: none;
             cursor: pointer;
+
+            width: min(100%, 45rem);
+
+            @include respond(tab-port) {
+                width: min(100%, 60rem);
+                padding: 0 2rem;
+            }
+
+            @include respond(tab-land) {
+                justify-content: flex-start;
+                width: min(100%, 75rem);
+                padding: 0 3rem;
+            }
+
+            @include respond(desk) {
+                width: min(100%, 100rem);
+                padding: 0 4rem;
+            }
         }
     }
 

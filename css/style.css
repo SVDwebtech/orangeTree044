@@ -1936,39 +1936,45 @@ body {
 }
 @media (min-width: 1200px) {
   .footer .footerHeroSection__socialMediaFooter {
-    width: min(100%, 82rem);
+    width: min(100%, 100rem);
+    padding: 0 4rem;
   }
+}
+.footer .secondaryNavSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
 }
 .footer .secondaryNavSection__secondaryNavList {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  row-gap: 1.5rem;
+  width: 100%;
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .footer .secondaryNavSection__secondaryNavList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     width: min(100%, 75rem);
     padding: 0 3rem;
-    align-items: start;
+  }
+  .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavItem {
+    flex: 1 0 300px;
+  }
+  .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavTextItem {
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
   .footer .secondaryNavSection__secondaryNavList {
-    width: min(100%, 82rem);
-    padding: 0 3rem;
-  }
-}
-@media (min-width: 900px) {
-  .footer .secondaryNavSection__secondaryNavList {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavItem {
-    flex: 1 0 250px;
-  }
-  .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavTextItem {
-    text-align: left;
+    width: min(100%, 100rem);
+    padding: 0 4rem;
   }
 }
 .footer .termsAndConditionsSection {
@@ -1977,6 +1983,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  padding: 0 1.5rem;
 }
 .footer .termsAndConditionsSection__button {
   display: flex;
@@ -1985,6 +1992,26 @@ body {
   gap: 0.5rem;
   border: none;
   cursor: pointer;
+  width: min(100%, 45rem);
+}
+@media (min-width: 37.5em) {
+  .footer .termsAndConditionsSection__button {
+    width: min(100%, 60rem);
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .footer .termsAndConditionsSection__button {
+    justify-content: flex-start;
+    width: min(100%, 75rem);
+    padding: 0 3rem;
+  }
+}
+@media (min-width: 75em) {
+  .footer .termsAndConditionsSection__button {
+    width: min(100%, 100rem);
+    padding: 0 4rem;
+  }
 }
 .footer .tsAndCs {
   display: flex;
