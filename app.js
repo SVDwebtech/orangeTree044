@@ -303,3 +303,20 @@ loyaltyClubBtn.addEventListener('click', function(){
 loyaltyClubCloseBtn.addEventListener('click', function(){
   loyaltyClubPopUp.classList.add('hidden');
 });
+
+/////////////////////////////////////////////////////////////////////////////////
+// copyright line break
+/////////////////////////////////////////////////////////////////////////////////
+const copyrightRights = document.querySelector('.copyright__rights');
+
+window.addEventListener('resize', function(){
+  let windowWidth = window.innerWidth;
+
+  if(windowWidth >= 600) {
+    copyrightRights.classList.remove('displayBlock');
+  } else {
+    copyrightRights.classList.add('displayBlock');
+  } 
+})
+
+//////////////////////////////////////////////////////////////////////////////

@@ -124,6 +124,10 @@
 
         gap: 2rem;
 
+        @media (min-width: 900px) {
+            align-items: flex-start;
+        }
+
         .cardGoogleReviewsContainer {
             display: flex;
             flex-direction: column;
@@ -135,6 +139,10 @@
             @media (min-width: 600px) {
                 flex-direction: row;
                 flex-wrap: wrap;
+            }
+
+            @media (min-width: 900px) {
+                justify-content: flex-start;
             }
         }
     }
@@ -166,6 +174,39 @@
         &__buttonsContainer {
             @media (min-width: 900px) {
                 margin: 0 auto 0 0;
+            }
+        }
+    }
+}
+
+.tradingHoursSection {
+    &__sectionContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 2rem;
+
+        width: 100%;
+
+        @media (min-width: 900px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+
+        .tradingHoursContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 2rem;
+
+            @media (min-width: 900px) {
+                align-items: flex-start;
             }
         }
     }

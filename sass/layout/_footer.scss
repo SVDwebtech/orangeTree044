@@ -1,23 +1,35 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
 
     background-color: $cp-white;
 
-    padding: 1rem;
-    
-    gap: .5rem;
+    // width: min(100%, 45rem);
+    padding: 0 0rem;
+    margin: 0 auto;
 
-    opacity: 1;
+    // @media (min-width: 600px) {
+    //     width: min(100%, 60rem);
+    //     // padding: 5rem 2rem;
+    // }
 
-    transition: opacity .6s;
+    // @media (min-width: 900px) {
+    //     width: min(100%, 75rem);
+    //     padding: 5rem 3rem;
+    // }
 
-    @media (min-width: 2000px) {
-        margin: 0 auto;
-        max-width: 2000px;
-    }
+    // @media (min-width: 1200px) {
+    //     width: min(100%, 82rem);
+    //     // padding: 5rem 4rem;
+    // }
+
+    // @media (min-width: 2000px) {
+    //     max-width: 2000px;
+    //     margin: 0 auto;
+    // }
 
     hr {
         border: none;
@@ -33,104 +45,119 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center; 
+        align-items: center;
+        gap: 2rem;
 
-        gap: clamp(1rem, 3vh, 3rem); 
-
-        width: 100%;
-        
-        padding: clamp(1rem, 3vh, 3rem) 1rem 0;
-
-        @media (min-height: 550px) {
-            gap: clamp(3rem, 7vh, 6rem);
-            padding: clamp(3rem, 7vh, 6rem) 1rem 0;
+        @include respond(tab-land) {
+            flex-direction: row;
         }
 
-        .primaryHeading {
+        &__heroLogo {
+
+            @include respond(tab-land) {
+                width: 55%;
+                height: 45vh;
+            }
+
+            .primaryHeading {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                gap: clamp(.5rem, 1vh, 1.6rem);
+
+                background-color: $cp-darkBlue;
+                border-radius: .25rem;
+
+                width: 100%;
+
+                padding: 2rem 2.2rem;
+
+                @include respond(tab-land) {
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                &__headAndBylineContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                }
+
+                &__headline {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .5rem; 
+
+                    margin-left: 5rem; 
+
+                    position: relative;  
+                }
+
+                &__headlineImage {
+                    width: 6rem;
+
+                    position: absolute;
+                    top: -.45rem;
+                    left: -5.5rem;
+                }
+
+                &__headlineText {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 0rem;
+                }
+
+                &__headlineTextMain {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 0rem;
+                }
+            }
+        }
+
+        &__heroContent {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: stretch;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
 
-            gap: clamp(.5rem, 1vh, 1.6rem);
-
-            background-color: $cp-darkBlue;
-            border-radius: .25rem;
-
-            max-width: 45rem;
-
-            padding: 2rem 2.2rem;
-            
-            &__headAndBylineContainer {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center; 
-            }
-
-            &__headline {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-
-                gap: .5rem; 
-
-                margin-left: 5rem; 
-
-                position: relative;  
-            }
-
-            &__headlineImage {
-                width: 6rem;
-
-                position: absolute;
-                top: -.45rem;
-                left: -5.5rem;
-            }
-
-            &__headlineText {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-
-                gap: 0rem;
-            }
-
-            &__headlineTextMain {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-
-                gap: 0rem;
-            }
-
-            &__hr {
-                border: none;
-                width: 100%;
-                height: 1px;
-
-                border-bottom: 1px solid $cp-green;
-                
-                margin: .25rem 0;
+            @include respond(tab-land) {
+                gap: 1rem;
             }
         }
 
-        &__contentContainer {
-            max-width: 45rem;
-            padding: 1rem;
+        &__socialMediaFooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 1rem;
+
+            @media (min-width: 600px) {
+                width: min(100%, 60rem);
+                padding: 0 3rem;
+            }
+
+            @media (min-width: 900px) {
+                width: min(100%, 75rem);
+                padding: 0;
+                align-items: start;
+            }
+
+            @media (min-width: 1200px) {
+                width: min(100%, 82rem);
+            }
         }
-    }
-
-    .socialMediaFooterSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        gap: 1rem;
     }
 
     .secondaryNavSection {
@@ -141,6 +168,30 @@
             align-items: center;
 
             gap: 1rem;
+
+            @media (min-width: 900px) {
+                width: min(100%, 75rem);
+                padding: 0 3rem;
+                align-items: start;
+            }
+
+            @media (min-width: 1200px) {
+                width: min(100%, 82rem);
+                padding: 0 3rem;
+            }
+
+            @media (min-width: 900px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .secondaryNavListNavItem {
+                    flex: 1 0 250px;
+                }
+
+                .secondaryNavListNavTextItem {
+                    text-align: left;
+                }
+            }
         }
 	}
 
@@ -204,10 +255,50 @@
             padding: 0 .5rem .25rem .5rem;
         }
     }
+
+    &__footerEnd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $cp-darkBlue;
+        width: 100%;
+        padding: 1.5rem;
+        margin: 0 auto;
+
+        .copyrightAndWebdevContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            @include respond(tab-port) {
+                width: min(100%, 60rem);
+                padding: 0 3rem;
+            }
+
+            @include respond(tab-land) {
+                flex-direction: row;
+                justify-content: space-between;
+
+                width: min(100%, 75rem);
+                padding: 0 3rem;
+            }
+
+            @include respond(desk) {
+                width: min(100%, 100rem);
+                padding: 0 4rem;
+            }
+        }
+    }
 }
 
 .hidden {
     display: none;
     height: 0;
     overflow: hidden;
+}
+
+.displayBlock {
+    display: block;
 }
