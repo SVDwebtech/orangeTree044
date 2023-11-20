@@ -522,7 +522,15 @@ body {
 }
 
 .contactUsDetailsComponent {
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent {
+    text-align: left;
+  }
+}
+.contactUsDetailsComponent__item {
+  line-height: 1.2;
 }
 
 .footer {
@@ -945,21 +953,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent {
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
 }
 .contactUsDetailsComponent__item {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.5;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent__item {
+    flex-direction: row;
+  }
 }
 .contactUsDetailsComponent__contactUsIcon {
   width: 3.2rem;
 }
 .contactUsDetailsComponent__paragraph {
-  width: 90%;
+  width: 100%;
 }
 
 .googleMapsIframe {
@@ -969,15 +990,21 @@ body {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .googleMapsIframe {
-    width: 100%;
+    width: 54rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .googleMapsIframe {
+    width: 55%;
     height: 45vh;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 75em) {
   .googleMapsIframe {
-    width: 55%;
+    width: 40%;
     height: 45vh;
   }
 }
@@ -2406,10 +2433,17 @@ body {
   gap: 2rem;
   width: 100%;
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .contactUsSection__sectionContentContainer {
     flex-direction: row;
-    gap: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}
+@media (min-width: 75em) {
+  .contactUsSection__sectionContentContainer {
+    gap: 8rem;
   }
 }
 .contactUsSection .contactUsDetailsContainer {
@@ -2422,6 +2456,11 @@ body {
 @media (min-width: 900px) {
   .contactUsSection .contactUsDetailsContainer__buttonsContainer {
     margin: 0 auto 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contactUsSection .contactUsDetailsContainer__buttonsContainer {
+    margin: 0 auto 0 0.5rem;
   }
 }
 
