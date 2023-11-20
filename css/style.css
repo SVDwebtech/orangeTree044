@@ -1842,6 +1842,12 @@ body {
   padding: 0 1rem;
   margin-bottom: 1.25rem;
 }
+@media (min-width: 37.5em) {
+  .footer .footerHeroSection {
+    width: min(100%, 60rem);
+    padding: 0 2rem;
+  }
+}
 @media (min-width: 56.25em) {
   .footer .footerHeroSection {
     flex-direction: row;

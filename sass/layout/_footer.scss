@@ -52,7 +52,7 @@
         padding: 0 1rem;
         margin-bottom: 1.25rem;
 
-        @include respond(tap-port) {
+        @include respond(tab-port) {
             width: min(100%, 60rem);
             padding: 0 2rem;
         }
