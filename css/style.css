@@ -284,6 +284,22 @@ body {
   line-height: 1;
   letter-spacing: 1px;
 }
+.headingH3Container .headingH3--cardGoogleReviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headingH3Container .headingH3__average {
+  margin-right: 0.75rem;
+}
+.headingH3Container .headingH3__letterG {
+  letter-spacing: 2px;
+  margin-right: 0.25rem;
+}
+.headingH3Container .headingH3__remainder {
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
 
 .headingH4Container {
   text-align: center;
@@ -510,10 +526,17 @@ body {
   font-weight: 800;
   line-height: 1;
   letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
-.cardGoogleReviews__paragraph {
+.cardGoogleReviews__paragraph:first-child {
   font-weight: 700;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contentGoogleReviewsContainer {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .carousel__service {
@@ -810,15 +833,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0rem;
   background-color: rgb(255, 255, 255);
   border: 2px solid #6CB347;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .cardGoogleReviews {
-    flex: 0 0 45%;
+    width: 100%;
+  }
+}
+@media (min-width: 56.25em) {
+  .cardGoogleReviews {
+    width: 29.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .cardGoogleReviews {
+    width: 37rem;
   }
 }
 .cardGoogleReviews__paragraph {
@@ -826,7 +859,7 @@ body {
   background-color: transparent;
   z-index: 100;
 }
-.cardGoogleReviews__paragraph::after {
+.cardGoogleReviews__paragraph:first-child::after {
   content: "";
   display: block;
   background-image: url("../../img/SvgIcons/quoteIcon.svg");
@@ -836,10 +869,25 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -2rem;
-  left: 0rem;
+  top: -1rem;
+  left: 2rem;
   z-index: -100;
   opacity: 0.2;
+}
+@media (min-width: 37.5em) {
+  .cardGoogleReviews__paragraph:first-child::after {
+    top: 0;
+  }
+}
+@media (min-width: 56.25em) {
+  .cardGoogleReviews__paragraph:first-child::after {
+    top: -2.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .cardGoogleReviews__paragraph:first-child::after {
+    top: -1.25rem;
+  }
 }
 
 .carousel {
@@ -2400,28 +2448,62 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .googleReviewsSection__sectionContentContainer {
+    flex-direction: row;
     align-items: flex-start;
+    gap: 5rem;
   }
 }
-.googleReviewsSection__sectionContentContainer .cardGoogleReviewsContainer {
+@media (min-width: 75em) {
+  .googleReviewsSection__sectionContentContainer {
+    gap: 8.5rem;
+  }
+}
+.googleReviewsSection__sectionContentContainer .contentGoogleReviewsContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
 }
-@media (min-width: 600px) {
-  .googleReviewsSection__sectionContentContainer .cardGoogleReviewsContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
+@media (min-width: 56.25em) {
+  .googleReviewsSection__sectionContentContainer .contentGoogleReviewsContainer {
+    align-items: flex-start;
   }
 }
-@media (min-width: 900px) {
-  .googleReviewsSection__sectionContentContainer .cardGoogleReviewsContainer {
-    justify-content: flex-start;
+.googleReviewsSection__sectionContentContainer .contentGoogleReviewsContainer__ratingContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0rem;
+}
+@media (min-width: 56.25em) {
+  .googleReviewsSection__sectionContentContainer .contentGoogleReviewsContainer__ratingContentContainer {
+    align-items: flex-start;
+  }
+}
+.googleReviewsSection__sectionContentContainer .contentGoogleReviewsContainer__ratingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+.googleReviewsSection__sectionContentContainer .buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (min-width: 56.25em) {
+  .googleReviewsSection__sectionContentContainer .buttonsContainer {
+    align-items: flex-start;
   }
 }
 

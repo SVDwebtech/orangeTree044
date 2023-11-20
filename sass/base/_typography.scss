@@ -116,8 +116,29 @@ body {
 		text-transform: capitalize;
 		line-height: 1;
 		letter-spacing: 1px;     
-	}	 
-}
+	}
+
+	.headingH3--cardGoogleReviews {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.headingH3__average {
+		margin-right: .75rem;
+	}
+
+	.headingH3__letterG {
+		letter-spacing: 2px;
+		margin-right: .25rem;
+	}
+
+	.headingH3__remainder {
+		text-transform: lowercase;
+		letter-spacing: 2px;
+	}
+}	 
+
 
 .headingH4Container {
 	text-align: center;
@@ -363,13 +384,20 @@ body {
 		font-size: clamp(1.8rem, 5.5vw, 2rem);
 		font-weight: 800;
 		line-height: 1;
-		letter-spacing: 1px;  
+		letter-spacing: 1px;
+		margin-bottom: 1rem;  
 	}
 
-	&__paragraph {
+	&__paragraph:first-child {
 		font-weight: 700;
 		text-align: center;
+		margin-bottom: 1rem;
 	}
+}
+
+.contentGoogleReviewsContainer {
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .carousel {

@@ -3,16 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    gap: 1rem;
+    gap: 0rem;
 
     background-color: rgba(255, 255, 255, 1);
     border: 2px solid $cp-green;
     border-radius: .5rem;
-    padding: 2rem;
+    padding: 1rem;
 
-    @media (min-width: 600px) {
-        flex: 0 0 45%
+    @include respond(tab-port) {
+        width: 100%;
+    }
+
+    @include respond(tab-land) {
+        width: 29.5rem;
+    }
+
+    @include respond(desk) {
+        width: 37rem;
     }
 
     &__paragraph {
@@ -21,7 +28,7 @@
         z-index: 100;
     }
 
-    &__paragraph::after {
+    &__paragraph:first-child::after {
         content: "";
         display: block;
 
@@ -34,8 +41,20 @@
         height: 100%;
 
         position: absolute;
-        top: -2rem;
-        left: 0rem;
+        top: -1rem;
+        left: 2rem;
+
+        @include respond(tab-port) {
+            top: 0;
+        }
+
+        @include respond(tab-land) {
+            top: -2.5rem;
+        }
+
+        @include respond(desk) {
+            top: -1.25rem;
+        }
 
         z-index: -100;
 
