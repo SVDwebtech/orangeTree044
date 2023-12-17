@@ -2069,14 +2069,14 @@ body {
 }
 @media (min-width: 56.25em) {
   .footer__footerEnd .copyrightAndWebdevContainer {
-    flex-direction: row;
-    justify-content: space-between;
     width: min(100%, 75rem);
     padding: 0 3rem;
   }
 }
 @media (min-width: 75em) {
   .footer__footerEnd .copyrightAndWebdevContainer {
+    flex-direction: row;
+    justify-content: space-between;
     width: min(100%, 100rem);
     padding: 0 4rem;
   }

@@ -307,14 +307,14 @@
             }
 
             @include respond(tab-land) {
-                flex-direction: row;
-                justify-content: space-between;
-
                 width: min(100%, 75rem);
                 padding: 0 3rem;
             }
 
             @include respond(desk) {
+                flex-direction: row;
+                justify-content: space-between;
+                
                 width: min(100%, 100rem);
                 padding: 0 4rem;
             }
