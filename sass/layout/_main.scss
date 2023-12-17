@@ -115,6 +115,9 @@
 }
 
 .googleReviewsSection {
+    @include respond(tab-land){
+        align-items: flex-start;
+    }
     &__sectionContentContainer {
         display: flex;
         flex-direction: column;
@@ -127,7 +130,20 @@
             align-items: flex-start;
         }
 
-        .cardGoogleReviewsContainer {
+        .reviewsAndButtonsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 2rem;
+
+            @include respond(tab-land){
+                flex-direction: row;
+            }
+        }
+
+        .googleReviewsContainer {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -135,13 +151,22 @@
             
             gap: 2rem;
 
-            @media (min-width: 600px) {
-                flex-direction: row;
-                flex-wrap: wrap;
+            @include respond(tab-land){
+                align-items: flex-start;
+                width: 25rem;
             }
+        }
 
-            @media (min-width: 900px) {
-                justify-content: flex-start;
+        .buttonsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 2rem;
+
+            @include respond(tab-land){
+                align-items: flex-start;
             }
         }
     }

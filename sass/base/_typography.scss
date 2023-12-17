@@ -360,19 +360,57 @@ body {
 	}
 }
 
-.cardGoogleReviews {
-	&__headingH4 {
-		color: $cf-darkBlue;
+// .cardGoogleReviews {
+// 	&__headingH4 {
+// 		color: $cf-darkBlue;
+// 		font-family: 'Open Sans', sans-serif;
+// 		font-size: clamp(1.8rem, 5.5vw, 2rem);
+// 		font-weight: 800;
+// 		line-height: 1;
+// 		letter-spacing: 1px;  
+// 	}
+
+// 	&__paragraph {
+// 		font-weight: 700;
+// 		text-align: center;
+// 	}
+// }
+
+.googleReviewsContainer {
+	.googleRatingPhrase {
+		display: flex;
+		justify-content: center;
+		align-items: last baseline;
+		gap: 1rem;
+
+		color: $cf-brightBlue;
 		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1.8rem, 5.5vw, 2rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 4.5vw, 2rem);
+		font-weight: 700;
+		
 		line-height: 1;
-		letter-spacing: 1px;  
+		letter-spacing: 1px;
 	}
 
-	&__paragraph {
-		font-weight: 700;
-		text-align: center;
+	.googleLetterG {
+		color: rgb(0, 68, 255);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterO1 {
+		color: rgb(255, 42, 0);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterO2 {
+		color: #ebcf00;
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterL {
+		color: rgb(9, 157, 19);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterE {
+		color: rgb(255, 42, 0);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
 	}
 }
 
