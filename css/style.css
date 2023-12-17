@@ -260,6 +260,11 @@ body {
   color: #f0f0f0;
 }
 
+@media (min-width: 56.25em) {
+  .headingH2Container {
+    text-align: left;
+  }
+}
 .headingH2Container__headingH2 {
   color: #001D36;
   font-family: "Playpen Sans", cursive;
@@ -2280,7 +2285,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 8rem;
+  gap: 5rem;
   width: min(100%, 45rem);
   padding: 5rem 1rem;
   margin: 0 auto;
@@ -2294,13 +2299,12 @@ body {
 @media (min-width: 900px) {
   .main {
     width: min(100%, 75rem);
-    padding: 5rem 3rem;
+    padding: 5rem 1.5rem;
   }
 }
 @media (min-width: 1200px) {
   .main {
     width: min(100%, 82rem);
-    padding: 5rem 4rem;
   }
 }
 
@@ -2434,6 +2438,11 @@ body {
   }
 }
 
+@media (min-width: 56.25em) {
+  .tradingHoursSection {
+    align-items: flex-start;
+  }
+}
 .tradingHoursSection__sectionContentContainer {
   display: flex;
   flex-direction: column;
@@ -2447,7 +2456,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 .tradingHoursSection__sectionContentContainer .tradingHoursContainer {
@@ -2459,6 +2468,7 @@ body {
 }
 @media (min-width: 900px) {
   .tradingHoursSection__sectionContentContainer .tradingHoursContainer {
+    flex-direction: row;
     align-items: flex-start;
   }
 }

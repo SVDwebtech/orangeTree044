@@ -91,6 +91,10 @@ body {
 
 .headingH2Container {
 
+	@include respond(tab-land) {
+		text-align: left;
+	}
+
 	&__headingH2 {
 		color: $cf-darkBlue;
 		font-family: 'Playpen Sans', cursive;
