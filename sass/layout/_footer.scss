@@ -189,17 +189,21 @@
                 padding: 0 3rem;
 
                 .secondaryNavListNavItem {
-                    flex: 1 0 300px;
+                    flex: 1 0 200px;
                 }
 
                 .secondaryNavListNavTextItem {
-                    text-align: left;
+                    text-align: center;
                 }
             }
 
             @media (min-width: 1200px) {
                 width: min(100%, 100rem);
                 padding: 0 4rem;
+
+                .secondaryNavListNavItem {
+                    flex: 1 0 300px;
+                }
             }
 
             
@@ -234,7 +238,7 @@
             }
 
             @include respond(tab-land) {
-                justify-content: flex-start;
+                justify-content: center;
                 width: min(100%, 75rem);
                 padding: 0 3rem;
             }
@@ -314,7 +318,7 @@
             @include respond(desk) {
                 flex-direction: row;
                 justify-content: space-between;
-                
+
                 width: min(100%, 100rem);
                 padding: 0 4rem;
             }

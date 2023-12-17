@@ -1966,16 +1966,19 @@ body {
     padding: 0 3rem;
   }
   .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavItem {
-    flex: 1 0 300px;
+    flex: 1 0 200px;
   }
   .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavTextItem {
-    text-align: left;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .footer .secondaryNavSection__secondaryNavList {
     width: min(100%, 100rem);
     padding: 0 4rem;
+  }
+  .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavItem {
+    flex: 1 0 300px;
   }
 }
 .footer .termsAndConditionsSection {
@@ -2004,7 +2007,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .footer .termsAndConditionsSection__button {
-    justify-content: flex-start;
+    justify-content: center;
     width: min(100%, 75rem);
     padding: 0 3rem;
   }
