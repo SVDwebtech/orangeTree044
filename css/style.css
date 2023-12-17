@@ -527,7 +527,12 @@ body {
 }
 
 .contactUsDetailsComponent {
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent {
+    text-align: left;
+  }
 }
 
 .footer {
@@ -950,40 +955,46 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent {
+    gap: 1rem;
+    align-items: flex-start;
+  }
 }
 .contactUsDetailsComponent__item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent__item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 .contactUsDetailsComponent__contactUsIcon {
   width: 3.2rem;
 }
 .contactUsDetailsComponent__paragraph {
-  width: 90%;
+  width: 100%;
 }
 
 .googleMapsIframe {
   border: 2px solid #6CB347;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 20px 1px rgba(30, 32, 32, 0.45);
-  width: 100%;
-  height: 100%;
+  width: 30rem;
+  height: 25rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 56.25em) {
   .googleMapsIframe {
-    width: 100%;
-    height: 45vh;
-  }
-}
-@media (min-width: 900px) {
-  .googleMapsIframe {
-    width: 55%;
-    height: 45vh;
+    width: 25rem;
+    height: 18rem;
   }
 }
 .googleMapsIframe__map {
@@ -2411,10 +2422,15 @@ body {
   }
 }
 
+@media (min-width: 56.25em) {
+  .contactUsSection {
+    align-items: flex-start;
+  }
+}
 .contactUsSection__sectionContentContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
   width: 100%;
@@ -2422,7 +2438,7 @@ body {
 @media (min-width: 900px) {
   .contactUsSection__sectionContentContainer {
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 .contactUsSection .contactUsDetailsContainer {
@@ -2430,7 +2446,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 @media (min-width: 900px) {
   .contactUsSection .contactUsDetailsContainer__buttonsContainer {

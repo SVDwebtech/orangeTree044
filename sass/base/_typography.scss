@@ -384,7 +384,11 @@ body {
 }
 
 .contactUsDetailsComponent {
-	text-align: left;
+	text-align: center;
+
+	@include respond(tab-land){
+            text-align: left;
+        }
 }
 
 .footer {

@@ -147,10 +147,14 @@
     }
 }
 .contactUsSection {
+    @include respond(tab-land){
+        align-items: flex-start;
+    }
+
     &__sectionContentContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         
         gap: 2rem;
@@ -159,7 +163,7 @@
 
         @media (min-width: 900px) {
             flex-direction: row;
-            gap: 3rem;
+            gap: 2rem;
         }
     }
     .contactUsDetailsContainer {
@@ -168,7 +172,7 @@
         justify-content: center;
         align-items: center;
         
-        gap: 2rem;
+        gap: 3rem;
 
         &__buttonsContainer {
             @media (min-width: 900px) {
