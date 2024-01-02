@@ -267,6 +267,11 @@ body {
 			font-size: clamp(1.6rem, 2.5vw, 1.8rem);
 		}
 	}
+	&--contactUs {
+		@include respond (tab-land) {
+            margin-bottom: 0rem;
+        }
+	}
 	&--tradingHours {
 		@media (min-width: 900px) {
             text-align: left;

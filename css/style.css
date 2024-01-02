@@ -441,6 +441,11 @@ body {
     font-size: clamp(1.6rem, 2.5vw, 1.8rem);
   }
 }
+@media (min-width: 56.25em) {
+  .paragraph--contactUs {
+    margin-bottom: 0rem;
+  }
+}
 @media (min-width: 900px) {
   .paragraph--tradingHours {
     text-align: left;
@@ -1004,29 +1009,6 @@ body {
   border: 1px solid #1E2020;
 }
 
-@media (min-width: 37.5em) {
-  .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-}
-.contactForm__field {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.contactForm__field input, .contactForm__field textarea {
-  border-radius: 0.35rem;
-  border: 2px solid #6CB347;
-  padding: 0.5rem;
-}
-.contactForm__submitButton {
-  margin: 2rem auto;
-}
-
 .contactUsDetailsComponent {
   display: flex;
   flex-direction: column;
@@ -1050,11 +1032,17 @@ body {
 @media (min-width: 56.25em) {
   .contactUsDetailsComponent__item {
     flex-direction: row;
-    align-items: flex-start;
   }
 }
 .contactUsDetailsComponent__contactUsIcon {
-  width: 3.2rem;
+  width: 5rem;
+  height: 5rem;
+}
+@media (min-width: 56.25em) {
+  .contactUsDetailsComponent__contactUsIcon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 }
 .contactUsDetailsComponent__paragraph {
   width: 100%;
@@ -2635,6 +2623,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+@media (min-width: 56.25em) {
+  .contactUsSection .contactUsDetailsContainer {
+    gap: 1.75rem;
+  }
 }
 @media (min-width: 900px) {
   .contactUsSection .contactUsDetailsContainer__buttonsContainer {

@@ -263,8 +263,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         gap: 3rem;
+        @include respond(tab-land) {
+            gap: 1.75rem;
+        }
 
         &__buttonsContainer {
             @media (min-width: 900px) {
