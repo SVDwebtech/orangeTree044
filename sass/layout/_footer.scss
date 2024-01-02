@@ -239,9 +239,9 @@
             }
 
             @include respond(tab-land) {
-                justify-content: center;
+                justify-content: flex-start;
                 width: min(100%, 75rem);
-                padding: 0 3rem;
+                padding: 0 1.5rem;
             }
 
             @include respond(desk) {

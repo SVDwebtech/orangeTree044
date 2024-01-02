@@ -2114,9 +2114,9 @@ body {
 }
 @media (min-width: 56.25em) {
   .footer .termsAndConditionsSection__button {
-    justify-content: center;
+    justify-content: flex-start;
     width: min(100%, 75rem);
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
 }
 @media (min-width: 75em) {
