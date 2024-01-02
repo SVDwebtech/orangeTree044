@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: stretch;
 
-    gap: 8rem;
+    gap: 5rem;
 
     width: min(100%, 45rem);
 
@@ -18,12 +18,11 @@
 
     @include respond(tab-land) {
         width: min(100%, 75rem);
-        padding: 5rem 3rem;
+        padding: 5rem 1.5rem;
     }
 
-    @include respond(desk) {
-        width: min(100%, 100rem);
-        padding: 5rem 4rem;
+    @media (min-width: 1200px) {
+        width: min(100%, 82rem);
     }
 }
 
@@ -46,12 +45,14 @@
 }
 
 .aboutSection {
+    @include respond(tab-land) {
+        align-items: flex-start;
+    }
     .sectionContentContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         gap: 2rem;
     }
 
@@ -60,34 +61,90 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         gap: 2rem;
     }
-
+    .managementContentContainer, .teamContentContainer {
+        @include respond(tab-land) {
+            align-items: flex-start;
+        }
+    }
     .cardAboutContainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        
-        gap: 2rem;
-
-        @media (min-width: 900px) {
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }  
+        gap: 2rem;  
     }
 }
 
 .servicesAndPricingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @include respond(tab-land) {
+        align-items: flex-start;
+    }
+
+    .servicesAndPricingContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        &__servicesContainer, &__pricingContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        &__servicesContainer {
+            @include respond(tab-land) {
+                align-items: flex-start;
+            }
+        }
+        &__servicesDescContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            @include respond(tab-land) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+        &__serviceDesc {
+            width: 100%;
+            @include respond(tab-land) {
+                flex: 1 0 25rem;
+            }
+        }
+        &__pricingContainer {
+            gap: .25rem;
+            width: 100%;
+            @include respond(tab-land) {
+                align-items: flex-start;
+            }
+        }
+    }
+
     .benefitsContentContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         gap: 2rem;
+        @include respond(tab-land) {
+            align-items: flex-start;
+        }
     }
 
     .benefitsList {
@@ -95,14 +152,23 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        @include respond(tab-land) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 5rem;
+            row-gap: .25rem;
+        }
 
         &__item {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-
             gap: .2rem;
+            @include respond(tab-land) {
+                align-items: flex-start;
+            }
         }
 
         &__checkmarkIcon {
@@ -116,6 +182,9 @@
 }
 
 .googleReviewsSection {
+    @include respond(tab-land){
+        align-items: flex-start;
+    }
     &__sectionContentContainer {
         display: flex;
         flex-direction: column;
@@ -130,63 +199,55 @@
             gap: 5rem;
         }
 
-        @include respond(desk) {
-            gap: 8.5rem;
+        .reviewsAndButtonsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 2rem;
+
+            @include respond(tab-land){
+                flex-direction: row;
+            }
         }
 
-        .contentGoogleReviewsContainer {
+        .googleReviewsContainer {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             gap: 2rem;
 
-            @include respond(tab-land) {
+            @include respond(tab-land){
                 align-items: flex-start;
+                width: 25rem;
             }
-
-            &__ratingContentContainer {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 0rem;
-
-                @include respond(tab-land) {
-                    align-items: flex-start;
-                }
-            }
-
-            &__ratingContainer {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                gap: 1rem;
-                padding-top: .5rem;
-            }
-
         }
 
         .buttonsContainer {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            gap: 1.5rem;
 
-            @include respond(tab-land) {
+            gap: 2rem;
+
+            @include respond(tab-land){
                 align-items: flex-start;
-                // padding-left: 1rem;
             }
         }
     }
 }
 .contactUsSection {
+    @include respond(tab-land){
+        align-items: flex-start;
+    }
+
     &__sectionContentContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         
         gap: 2rem;
@@ -195,13 +256,7 @@
 
         @include respond(tab-land) {
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 5rem;
-        }
-
-        @include respond(desk) {
-            gap: 8rem;
+            gap: 2rem;
         }
     }
     .contactUsDetailsContainer {
@@ -209,8 +264,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        gap: 2rem;
+        gap: 3rem;
+        @include respond(tab-land) {
+            gap: 1.75rem;
+        }
 
         &__buttonsContainer {
             @media (min-width: 900px) {
@@ -225,11 +282,9 @@
 }
 
 .tradingHoursSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+    @include respond(tab-land){
+        align-items: flex-start;
+    }
     &__sectionContentContainer {
         display: flex;
         flex-direction: column;
@@ -244,11 +299,7 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 5rem;
-        }
-
-        @include respond(desk) {
-            gap: 15.5rem;
+            gap: 2rem;
         }
 
         .tradingHoursContainer {
@@ -259,22 +310,8 @@
             
             gap: 2rem;
 
-            @include respond(tab-land) {
-                width: 30rem;
-                align-items: flex-start;
-            }
-        }
-
-        .buttonsContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            width: 100%;
-
-            @include respond(tab-land) {
-                width: 45%;
+            @media (min-width: 900px) {
+                flex-direction: row;
                 align-items: flex-start;
             }
         }

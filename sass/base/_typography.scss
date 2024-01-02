@@ -91,6 +91,10 @@ body {
 
 .headingH2Container {
 
+	@include respond(tab-land) {
+		text-align: left;
+	}
+
 	&__headingH2 {
 		color: $cf-darkBlue;
 		font-family: 'Playpen Sans', cursive;
@@ -107,12 +111,15 @@ body {
 
 .headingH3Container {
 	text-align: center;
+	@include respond(tab-land) {
+		text-align: left;
+	}
 
 	&__headingH3 {
 		color: $cf-brightBlue;
 		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
-		font-weight: 900;
+		font-size: clamp(1.9rem, 4.5vw, 2.1rem);
+		font-weight: 700;
 		text-transform: capitalize;
 		line-height: 1;
 		letter-spacing: 1px;     
@@ -144,10 +151,11 @@ body {
 	text-align: center;
 	&__headingH4 {
 		color: $cf-darkBlue;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.6rem;
-		font-weight: 700;
-		line-height: 1;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.4rem, 4.4vw, 1.6rem);
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 1.1;
 		letter-spacing: 1px;     
 	}
 
@@ -264,14 +272,42 @@ body {
 }
 
 .paragraph {
+	margin-bottom: 1rem;
 	&--heroSection {
 		color: $cf-white;
 	}
-
+	&--cardAbout {
+		font-size: 1.4rem;
+		@include respond(tab-port) {
+			font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+		}
+		@include respond(tab-land) {
+			font-size: clamp(1.4rem, 5vw, 1.8rem);
+		}
+		@include respond(desk) {
+			font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+		}
+	}
+	&--contactUs {
+		@include respond (tab-land) {
+            margin-bottom: 0rem;
+        }
+	}
 	&--tradingHours {
 		@media (min-width: 900px) {
             text-align: left;
         }
+	}
+	&--vehicleDescription {
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	&--pricing {
+		line-height: 1.1;
+		margin-bottom: 0rem;
+	}
+	&--copyright, &--webdev {
+		margin-bottom: 0rem;
 	}
 }
 
@@ -377,21 +413,57 @@ body {
 	}
 }
 
-.cardGoogleReviews {
-	&__headingH4 {
-		color: $cf-darkBlue;
+// .cardGoogleReviews {
+// 	&__headingH4 {
+// 		color: $cf-darkBlue;
+// 		font-family: 'Open Sans', sans-serif;
+// 		font-size: clamp(1.8rem, 5.5vw, 2rem);
+// 		font-weight: 800;
+// 		line-height: 1;
+// 		letter-spacing: 1px;  
+// 	}
+
+// 	&__paragraph {
+// 		font-weight: 700;
+// 		text-align: center;
+// 	}
+// }
+
+.googleReviewsContainer {
+	.googleRatingPhrase {
+		display: flex;
+		justify-content: center;
+		align-items: last baseline;
+		gap: 1rem;
+
+		color: $cf-brightBlue;
 		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1.8rem, 5.5vw, 2rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 4.5vw, 2rem);
+		font-weight: 700;
+		
 		line-height: 1;
 		letter-spacing: 1px;
-		margin-bottom: 1rem;  
 	}
 
-	&__paragraph:first-child {
-		font-weight: 700;
-		text-align: center;
-		margin-bottom: 1rem;
+	.googleLetterG {
+		color: rgb(0, 68, 255);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterO1 {
+		color: rgb(255, 42, 0);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterO2 {
+		color: #ebcf00;
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterL {
+		color: rgb(9, 157, 19);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterE {
+		color: rgb(255, 42, 0);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
 	}
 }
 
@@ -410,13 +482,9 @@ body {
 .contactUsDetailsComponent {
 	text-align: center;
 
-	@include respond(tab-land) {
-		text-align: left;
-	}
-
-	&__item {
-		line-height: 1.2;
-	}
+	@include respond(tab-land){
+            text-align: left;
+        }
 }
 
 .footer {
