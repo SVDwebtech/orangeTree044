@@ -1,0 +1,48 @@
+// style cardCarousel
+.cardCarousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: $cp-white;
+    border: 2px solid $cp-green; 
+    box-shadow: 2px 2px 12px 4px rgba($cp-dark, .3);
+    min-height: 30rem;   
+    padding: 2rem 1rem ;
+    margin: 3rem 0 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include respond(tab-land) {
+        align-items: flex-start;
+        width: 72rem;
+        min-height: 16rem;
+        padding: 2rem 2rem;
+    };
+    &__pricingContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .25rem;
+        @include respond(tab-land) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1rem;
+        };
+    }
+    &__paragraph--pricing {
+        @include respond(tab-land) {
+            flex: 1 0 10rem;
+        }
+    };
+}
+.hidden {
+    display: none;
+    opacity: 0;
+}
+.visible {
+    display: flex;
+    opacity: 1;
+}

@@ -1,0 +1,38 @@
+// contact details component
+.contactUsDetailsComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    @include respond(tab-land){
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .25rem;
+        @include respond(tab-land){
+            flex-direction: row;
+        }
+    }
+
+    &__contactUsIcon {
+        width: 5rem;
+        height: 5rem;
+        @include respond(tab-land) {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+
+    &__paragraph {
+        width: 100%
+    }
+}

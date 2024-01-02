@@ -1,0 +1,555 @@
+// typography
+// font-family: 'Lato', sans-serif;        --- Body Text
+// font-family: 'Open Sans', sans-serif;   --- H3 & H4
+// font-family: 'Playpen Sans', cursive;   --- H2
+// font-family: 'Rum Raisin', sans-serif;  --- H1
+
+
+body {
+	color: $cf-darkBlue;
+	font-family: 'Lato', sans-serif;
+	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.5;
+
+	@media (min-width: 900px) {
+        text-align: left;
+    }
+}
+
+.navbarSection {
+	color: $cf-white;
+	font-size: 1rem;
+}
+
+.logo {	
+	&__text--headline { 
+		font-family: 'Rum Raisin', sans-serif;
+		font-size: 1.9rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: .825;	
+	}
+
+	&__text--headlineOrange, &__text--headlineTree { 
+		background: linear-gradient(to bottom, $cp-lightOrange 15%, $cp-orangeRed 50%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+
+	&__text--byline {
+		color: $cf-white;
+		font-family: 'Lato', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		text-transform: capitalize;
+		line-height: 1;
+	}
+}
+
+.primaryHeading {
+	color: $cf-white;
+	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+
+	&__intro {
+		font-family: 'Open Sans', sans-serif;
+		text-transform: capitalize;
+	}
+
+	&__headlineTextMain {
+		font-family: 'Rum Raisin', sans-serif;
+		font-size: clamp(2.6rem, 9vw, 3.2rem);
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: .85;     
+	}
+
+	&__headlineTextMain--orange, &__headlineTextMain--tree {
+		background: linear-gradient(to bottom, $cp-lightOrange 15%, $cp-orangeRed 50%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__headlineTextSub {
+		font-family: 'Open Sans', sans-serif;
+		text-transform: capitalize;
+		line-height: 1;
+	}
+
+	&__byline {
+		color: $cf-white;
+	}
+}
+
+.headingH2Container {
+
+	@include respond(tab-land) {
+		text-align: left;
+	}
+
+	&__headingH2 {
+		color: $cf-darkBlue;
+		font-family: 'Playpen Sans', cursive;
+		font-size: clamp(2.2rem, 7vw, 2.8rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-align: center;
+
+		letter-spacing: 1px;  
+	}
+}
+
+.headingH3Container {
+	text-align: center;
+	@include respond(tab-land) {
+		text-align: left;
+	}
+
+	&__headingH3 {
+		color: $cf-brightBlue;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.9rem, 4.5vw, 2.1rem);
+		font-weight: 700;
+		text-transform: capitalize;
+		line-height: 1;
+		letter-spacing: 1px;     
+	}	 
+}
+
+.headingH4Container {
+	text-align: center;
+	&__headingH4 {
+		color: $cf-darkBlue;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.4rem, 4.4vw, 1.6rem);
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 1.1;
+		letter-spacing: 1px;     
+	}
+
+	&__headingH4--contact {
+		color: $cf-darkGreen;
+		font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		}
+	}
+
+	&__headingH4--slide {
+		color: $cf-darkGreen;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	&__headingH4--cardPhoto {
+		color: $cf-white;
+		font-size: clamp(1.15rem, 2.15vw, 2.15rem);
+		font-weight: 600;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		text-align: left;
+
+		@include respond(tab-land) {
+			font-size: clamp(.35rem, 1.85vw, 1.35rem);
+		}
+	}
+}
+
+.headingH5Container {
+	text-align: center;
+	&__headingH5 {
+		color: $cf-darkBlue;
+		font-family:'Lato', sans-serif;
+		font-size: 1.2rem;
+		font-weight: 400;  
+		line-height: 1;
+		letter-spacing: 1px;   
+	}
+
+	&__headingH5--contact {
+		font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
+		
+		// tablet portrait
+		@media (min-width: 600px) {
+			text-align: left;
+		}
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
+		}
+	}
+
+	&__headingH5--slide {
+		color: $cf-green;
+		text-transform: lowercase;
+		text-align: left;
+	}
+
+	&__headingH5--cardPhoto {
+		color: $cf-lightGrey;
+		font-size: clamp(1rem, 2vw, 2rem);
+		font-weight: 600;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		text-align: left;
+
+		@include respond(tab-land) {
+			font-size: clamp(.20rem, 1.70vw, 1.20rem);
+		}
+	}
+
+	&__headingH5--loyaltyClubPopUp {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
+		font-weight:400;
+	}
+}
+
+.headingSlideContainer {
+	text-align: center;
+	line-height: 1;
+	letter-spacing: 1px;
+	
+	&__headingH4--slide {
+		color: $cf-darkGreen;
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+		font-weight: 700;
+		letter-spacing: 0px;
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		}
+	}
+
+	&__headingH5--slide {
+		color: $cf-darkGreen;
+		font-family: 'Lato', sans-serif;
+		font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
+		font-weight: 900;  
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
+		}
+	}
+}
+
+.paragraph {
+	margin-bottom: 1rem;
+	&--heroSection {
+		color: $cf-white;
+	}
+	&--cardAbout {
+		font-size: 1.4rem;
+		@include respond(tab-port) {
+			font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+		}
+		@include respond(tab-land) {
+			font-size: clamp(1.4rem, 5vw, 1.8rem);
+		}
+		@include respond(desk) {
+			font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+		}
+	}
+	&--contactUs {
+		@include respond (tab-land) {
+            margin-bottom: 0rem;
+        }
+	}
+	&--tradingHours {
+		@media (min-width: 900px) {
+            text-align: left;
+        }
+	}
+	&--vehicleDescription {
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	&--pricing {
+		line-height: 1.1;
+		margin-bottom: 0rem;
+	}
+	&--copyright, &--webdev {
+		margin-bottom: 0rem;
+	}
+}
+
+.btn {
+	font-family: 'Open Sans', sans-serif;
+	font-size: clamp(1.6rem, 5.2vw, 1.8rem);
+	font-weight:700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	&--primary-orange {
+		color: $cf-white;
+	}
+
+	&--primary-white {
+		color: $cf-orangeRed;
+		font-size: clamp(1.2rem, 4vw, 1.4rem);
+	}
+
+	&--carousel {
+		color: $cf-darkBlue;
+		font-size: clamp(2.2rem, 4.5vw, 2.4rem);
+	}
+
+	&--loyaltyClubCloseBtn {
+		font-size: clamp(1rem, 3vw, 1.2rem);
+	}
+
+	&--loyaltyClubCloseX {
+		color: $cf-white;
+	}
+}
+
+.navList {
+	&__navLink {
+		color: $cp-orangeRed;
+		font-family: 'Lato', sans-serif;;
+		font-size: clamp(calc(1.4rem + .5vw), 2.3vh, calc(1.8rem + .5vw));
+        font-weight: 700;
+	}
+}
+
+.navListSecondary {
+	&__navLink {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+        font-weight: 900;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+		@media (min-width: 500px) {
+			font-size: clamp(calc(1.15rem + .8vw), 2.3vh, calc(3.5rem + .8vw));
+		}
+		
+		@media (min-width: 1200px) {
+			font-size: clamp(calc(1.15rem + 1vw), 2.3vh, calc(3.5rem + 1vw));
+		}
+
+		@media (min-height: 800px) {
+			font-size: clamp(calc(1.15rem + .5vw), 2.6vh, calc(3.5rem + .6vw));
+		}
+
+		@media (min-width: 1200px) and (min-height: 800px) {
+			font-size: clamp(calc(1.15rem + 1vw), 2.6vh, calc(3.5rem + 1vw));
+		}
+	}
+}
+
+.cardAbout {
+	.cardAboutFigure {
+        &__caption {
+			color: $cf-white;
+			font-family: 'Open Sans', sans-serif;
+			font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+			font-weight: 800;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			text-decoration: underline;
+			text-underline-offset: 2px;
+        }
+    }
+}
+
+.cardCarousel {
+	&__headingH4 {
+		color: $cf-blueGrey;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 1;
+		letter-spacing: 1px;  
+	}
+
+	&__paragraph {
+		font-weight: 700;
+	}
+}
+
+.benefitsList {
+	&__benefitsText {
+		font-weight: 700;
+	}
+}
+
+// .cardGoogleReviews {
+// 	&__headingH4 {
+// 		color: $cf-darkBlue;
+// 		font-family: 'Open Sans', sans-serif;
+// 		font-size: clamp(1.8rem, 5.5vw, 2rem);
+// 		font-weight: 800;
+// 		line-height: 1;
+// 		letter-spacing: 1px;  
+// 	}
+
+// 	&__paragraph {
+// 		font-weight: 700;
+// 		text-align: center;
+// 	}
+// }
+
+.googleReviewsContainer {
+	.googleRatingPhrase {
+		display: flex;
+		justify-content: center;
+		align-items: last baseline;
+		gap: 1rem;
+
+		color: $cf-brightBlue;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.8rem, 4.5vw, 2rem);
+		font-weight: 700;
+		
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+
+	.googleLetterG {
+		color: rgb(0, 68, 255);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterO1 {
+		color: rgb(255, 42, 0);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterO2 {
+		color: #ebcf00;
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterL {
+		color: rgb(9, 157, 19);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+	.googleLetterE {
+		color: rgb(255, 42, 0);
+		text-shadow: 1px 1px 2px rgba(3, 3, 3, .9);
+	}
+}
+
+.carousel {
+	&__service {
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		line-height: 1.2;
+	}
+}
+
+.contactUsDetailsComponent {
+	text-align: center;
+
+	@include respond(tab-land){
+            text-align: left;
+        }
+}
+
+.footer {
+	color: $cf-darkBlue;
+	font-family: 'Lato', sans-serif;
+	font-size: clamp(1.4rem, 4.2vw, 1.6rem);
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.2;
+
+	.footerHeroSection__paragraph {
+		@media (min-width: 900px) {
+			text-align: left;
+		}
+	}
+
+	.primaryHeading__headlineTextSub {
+		text-align: left;
+	}
+
+	.secondaryNavSection {
+		.secondaryNavList__navItemText {	
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+
+	.termsAndConditionsSection {		
+		&__button {	
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			font-weight: inherit;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+
+		&__closeButton {
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			font-weight: inherit;
+		}
+	}
+
+	.copyright {
+		color: $cf-orangeRed;
+		font-weight: 900;
+	}
+	
+	.webdev {
+		color: $cf-white;
+		font-size: clamp(1.2rem, 4.2vw, 1.4rem);
+		font-weight: 400;
+		&__name {
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+}
+
+.tsAndCs {
+	&__h2 {
+		color: $cf-blueGrey;
+		font-family: 'Lilita One', cursive;
+		font-size: clamp(2rem, 5vw, 2.4rem);
+		font-weight: 900;
+		text-align: center;
+		line-height: 1;
+		letter-spacing: 2px;
+		margin: 4rem 0 2rem;
+	}
+	
+	&__h3 {
+		color: $cf-orangeRed;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
+		font-weight: 900;
+		text-align: center;
+		line-height: 1;
+		letter-spacing: 2px;
+		margin: 4rem 0 2rem;
+	}
+
+	&__p {
+		color:  $cf-darkBlue;
+		font-family: 'Lato', sans-serif;
+		font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+		font-weight: 400;
+		text-align: justify;
+		margin: 0 0 .5rem;
+	}
+}
