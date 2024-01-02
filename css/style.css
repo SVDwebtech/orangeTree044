@@ -2062,15 +2062,21 @@ body {
   .footer .secondaryNavSection__secondaryNavList {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: flex-start;
     width: min(100%, 75rem);
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
   .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavItem {
-    flex: 1 0 200px;
+    width: 225px;
   }
   .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavTextItem {
     text-align: center;
+  }
+}
+@media (min-width: 56.25em) and (min-width: 56.25em) {
+  .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavTextItem {
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {

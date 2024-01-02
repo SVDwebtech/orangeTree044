@@ -181,16 +181,20 @@
             @include respond(tab-land) {
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: flex-start;
                 align-items: flex-start;
                 width: min(100%, 75rem);
-                padding: 0 3rem;
+                padding: 0 1.5rem;
 
                 .secondaryNavListNavItem {
-                    flex: 1 0 200px;
+                    width: 225px;
                 }
 
                 .secondaryNavListNavTextItem {
                     text-align: center;
+                    @include respond(tab-land) {
+                        text-align: left;
+                    }
                 }
             }
 
