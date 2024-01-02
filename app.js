@@ -1,3 +1,4 @@
+// app logic
 const hamburgerBtn = document.querySelector('.hamburgerBtn');
 
 const hamburgerTopBar = document.querySelector(".hamburgerBtn__hamburgerBar--top");
