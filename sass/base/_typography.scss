@@ -111,12 +111,15 @@ body {
 
 .headingH3Container {
 	text-align: center;
+	@include respond(tab-land) {
+		text-align: left;
+	}
 
 	&__headingH3 {
 		color: $cf-brightBlue;
 		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
-		font-weight: 900;
+		font-size: clamp(1.9rem, 4.5vw, 2.1rem);
+		font-weight: 700;
 		text-transform: capitalize;
 		line-height: 1;
 		letter-spacing: 1px;     
@@ -127,10 +130,11 @@ body {
 	text-align: center;
 	&__headingH4 {
 		color: $cf-darkBlue;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.6rem;
-		font-weight: 700;
-		line-height: 1;
+		font-family: 'Open Sans', sans-serif;
+		font-size: clamp(1.4rem, 4.4vw, 1.6rem);
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 1.1;
 		letter-spacing: 1px;     
 	}
 
@@ -247,14 +251,36 @@ body {
 }
 
 .paragraph {
+	margin-bottom: 1rem;
 	&--heroSection {
 		color: $cf-white;
+	}
+	&--cardAbout {
+		font-size: 1.4rem;
+		@include respond(tab-port) {
+			font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+		}
+		@include respond(tab-land) {
+			font-size: clamp(1.4rem, 5vw, 1.8rem);
+		}
+		@include respond(desk) {
+			font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+		}
 	}
 
 	&--tradingHours {
 		@media (min-width: 900px) {
             text-align: left;
         }
+	}
+
+	&--vehicleDescription {
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	&--pricing {
+		line-height: 1.1;
+		margin-bottom: 0rem;
 	}
 }
 

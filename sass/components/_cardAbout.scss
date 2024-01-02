@@ -1,70 +1,73 @@
 .cardAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 2px solid $cp-green;
     border-radius: .5rem;
-  
     position: relative;
-
-    @media (min-width: 450px) {
-        display: flex;
+    width: min(100%, 28rem);
+    @include respond(tab-port) {
         flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-    }
-    
+        align-items: flex-start;
+        width: 100%;
+    };
     .cardAboutFigure {
-        background: linear-gradient(to top right, rgba($cp-brightBlue, 1) 55%, rgba($cp-white, .1) 100%);
+        background: linear-gradient(to top right, rgba($cp-brightBlue, 1) 55%, rgba($cp-white, .1) 150%);
         border-bottom: 2px solid $cp-green;
         position: relative;
-
-        @media (min-width: 450px) {
-            flex: 1 0 45%;
+        @include respond (tab-port) {
+            border-right: 2px solid $cp-green;
+            border-bottom: none;
         }
-
-        @media (min-width: 1200px) {
-            flex: 1 0 35%;
-        }
-
-
         &__image {
+            display: block;
             width: 100%;
-            height: 100%;
+            height: auto;
+            @include respond(tab-port) {
+                width: min(27rem, 50vw);
+            };
+            @include respond(tab-land) {
+                width: min(30rem, 50vw);
+            };
+            @include respond(desk) {
+                width: min(38rem, 50vw);
+            };
         }
         &__figcaption {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-
             gap: 0;
-
             position: absolute;
             bottom: 1rem;
             left: 1rem;
         }
     }
-
     .cardAboutFigure::before {
         content: "";
         background: linear-gradient(to top, rgba($cp-darkBlue, 1) 5%, rgba(transparent, .1) 45%);
-
         width: 100%;
         height: 100%;
-        
         position: absolute;
         top: 0;
         left: 0;
-
         z-index: 0;
     }
-
     .paragraph {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
-
-        @media (min-width: 1200px) {
-            padding: 0 5rem;
+        padding: 1rem;
+        @include respond(tab-port) {
+            padding: 2rem 2rem 1rem;
+        }
+        @include respond(tab-land) {
+            padding: 2rem 3rem 1rem;
+        }
+        @include respond(desk) {
+            padding: 5rem 5rem 1rem;
         }
     }
 }
