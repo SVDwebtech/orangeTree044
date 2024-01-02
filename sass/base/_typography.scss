@@ -267,19 +267,20 @@ body {
 			font-size: clamp(1.6rem, 2.5vw, 1.8rem);
 		}
 	}
-
 	&--tradingHours {
 		@media (min-width: 900px) {
             text-align: left;
         }
 	}
-
 	&--vehicleDescription {
 		line-height: 1.1;
 		font-weight: 700;
 	}
 	&--pricing {
 		line-height: 1.1;
+		margin-bottom: 0rem;
+	}
+	&--copyright, &--webdev {
 		margin-bottom: 0rem;
 	}
 }

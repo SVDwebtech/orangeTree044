@@ -454,6 +454,9 @@ body {
   line-height: 1.1;
   margin-bottom: 0rem;
 }
+.paragraph--copyright, .paragraph--webdev {
+  margin-bottom: 0rem;
+}
 
 .btn {
   font-family: "Open Sans", sans-serif;
