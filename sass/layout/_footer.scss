@@ -199,8 +199,8 @@
             }
 
             @media (min-width: 1200px) {
-                width: min(100%, 100rem);
-                padding: 0 4rem;
+                width: min(100%, 82rem);
+                padding: 0 1.5rem;
 
                 .secondaryNavListNavItem {
                     flex: 1 0 300px;
@@ -245,8 +245,8 @@
             }
 
             @include respond(desk) {
-                width: min(100%, 100rem);
-                padding: 0 4rem;
+                width: min(100%, 82rem);
+                padding: 0 1.5rem;
             }
         }
     }
@@ -312,17 +312,25 @@
             }
 
             @include respond(tab-land) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
                 width: min(100%, 75rem);
-                padding: 0 3rem;
+                padding: 0 1.5rem;
             }
 
             @include respond(desk) {
                 flex-direction: row;
                 justify-content: space-between;
 
-                width: min(100%, 100rem);
-                padding: 0 4rem;
+                width: min(100%, 82rem);
+                padding: 0 1.5rem;
             }
+        }
+    }
+    .copyright__rights {
+        @include respond(desk) {
+            display: inline-block;
         }
     }
 }

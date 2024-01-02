@@ -636,6 +636,11 @@ body {
   color: #e94104;
   font-weight: 900;
 }
+@media (min-width: 56.25em) {
+  .footer .copyright {
+    text-align: left;
+  }
+}
 .footer .webdev {
   color: #f0f0f0;
   font-size: clamp(1.2rem, 4.2vw, 1.4rem);
@@ -2081,8 +2086,8 @@ body {
 }
 @media (min-width: 1200px) {
   .footer .secondaryNavSection__secondaryNavList {
-    width: min(100%, 100rem);
-    padding: 0 4rem;
+    width: min(100%, 82rem);
+    padding: 0 1.5rem;
   }
   .footer .secondaryNavSection__secondaryNavList .secondaryNavListNavItem {
     flex: 1 0 300px;
@@ -2121,8 +2126,8 @@ body {
 }
 @media (min-width: 75em) {
   .footer .termsAndConditionsSection__button {
-    width: min(100%, 100rem);
-    padding: 0 4rem;
+    width: min(100%, 82rem);
+    padding: 0 1.5rem;
   }
 }
 .footer .tsAndCs {
@@ -2179,16 +2184,24 @@ body {
 }
 @media (min-width: 56.25em) {
   .footer__footerEnd .copyrightAndWebdevContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     width: min(100%, 75rem);
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
 }
 @media (min-width: 75em) {
   .footer__footerEnd .copyrightAndWebdevContainer {
     flex-direction: row;
     justify-content: space-between;
-    width: min(100%, 100rem);
-    padding: 0 4rem;
+    width: min(100%, 82rem);
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .footer .copyright__rights {
+    display: inline-block;
   }
 }
 

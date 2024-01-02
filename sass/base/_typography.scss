@@ -508,6 +508,9 @@ body {
 	.copyright {
 		color: $cf-orangeRed;
 		font-weight: 900;
+		@include respond(tab-land) {
+			text-align: left;
+		}
 	}
 	
 	.webdev {
