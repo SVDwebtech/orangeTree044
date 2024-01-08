@@ -224,7 +224,7 @@ for(let item of navItems) {
 const leftBtn = document.querySelector('.leftBtn');
 const rightBtn = document.querySelector('.rightBtn');
 const index = document.querySelectorAll('.index');
-const service = document.querySelectorAll('.service');
+// const service = document.querySelectorAll('.service');
 const card = document.querySelectorAll('.cardCarousel');
 
 let counter = 0
@@ -234,8 +234,8 @@ leftBtn.addEventListener('click', function(){
       index[counter].classList.remove('highlightIndex');
       index[index.length - 1].classList.add('highlightIndex');
 
-      service[counter].classList.remove('highlightBorder');
-      service[service.length - 1].classList.add('highlightBorder');
+      // service[counter].classList.remove('highlightBorder');
+      // service[service.length - 1].classList.add('highlightBorder');
 
       card[counter].classList.remove('visible');
       card[counter].classList.add('hidden');
@@ -247,8 +247,8 @@ leftBtn.addEventListener('click', function(){
       index[counter].classList.remove('highlightIndex');
       index[counter - 1].classList.add('highlightIndex');
 
-      service[counter].classList.remove('highlightBorder');
-      service[counter - 1].classList.add('highlightBorder');
+      // service[counter].classList.remove('highlightBorder');
+      // service[counter - 1].classList.add('highlightBorder');
 
       card[counter].classList.remove('visible');
       card[counter].classList.add('hidden');
@@ -260,12 +260,12 @@ leftBtn.addEventListener('click', function(){
 })
 
 rightBtn.addEventListener('click', function(){
-    if(counter === 3){
+    if(counter === 4){
       index[counter].classList.remove('highlightIndex');
       index[0].classList.add('highlightIndex');
 
-      service[counter].classList.remove('highlightBorder');
-      service[0].classList.add('highlightBorder');
+      // service[counter].classList.remove('highlightBorder');
+      // service[0].classList.add('highlightBorder');
 
       card[counter].classList.remove('visible');
       card[counter].classList.add('hidden');
@@ -277,8 +277,8 @@ rightBtn.addEventListener('click', function(){
       index[counter].classList.remove('highlightIndex');
       index[counter + 1].classList.add('highlightIndex');
 
-      service[counter].classList.remove('highlightBorder');
-      service[counter + 1].classList.add('highlightBorder');
+      // service[counter].classList.remove('highlightBorder');
+      // service[counter + 1].classList.add('highlightBorder');
 
       card[counter].classList.remove('visible');
       card[counter].classList.add('hidden');
