@@ -839,7 +839,8 @@ body {
   background-color: #f0f0f0;
   border: 2px solid #6CB347;
   box-shadow: 2px 2px 12px 4px rgba(30, 32, 32, 0.3);
-  min-height: 30rem;
+  width: 100%;
+  min-height: 20rem;
   padding: 2rem 1rem;
   margin: 3rem 0 4rem;
   position: absolute;
@@ -870,7 +871,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .cardCarousel__paragraph--pricing {
-    flex: 1 0 10rem;
+    flex: 1 0 19rem;
   }
 }
 
@@ -882,6 +883,15 @@ body {
 .visible {
   display: flex;
   opacity: 1;
+}
+
+.lineBreakDisplay {
+  display: none;
+}
+@media (min-width: 56.25em) {
+  .lineBreakDisplay {
+    display: block;
+  }
 }
 
 .cardGoogleReviews {
@@ -937,7 +947,7 @@ body {
 }
 .carousel__slideWrapper {
   width: min(100%, 35rem);
-  min-height: 34rem;
+  min-height: 24rem;
   position: relative;
 }
 @media (min-width: 56.25em) {
