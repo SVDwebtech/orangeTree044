@@ -2573,6 +2573,9 @@ body {
   padding-bottom: 0.35rem;
 }
 
+.googleReviewsSection {
+  overflow: hidden;
+}
 @media (min-width: 56.25em) {
   .googleReviewsSection {
     align-items: flex-start;
@@ -2584,6 +2587,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 @media (min-width: 900px) {
   .googleReviewsSection__sectionContentContainer {

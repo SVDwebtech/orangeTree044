@@ -183,6 +183,7 @@
 }
 
 .googleReviewsSection {
+    overflow: hidden;
     @include respond(tab-land){
         align-items: flex-start;
     }
@@ -193,6 +194,9 @@
         align-items: center;
 
         gap: 2rem;
+
+        max-width: 100%;
+        overflow: hidden;
 
         @media (min-width: 900px) {
             align-items: flex-start;
