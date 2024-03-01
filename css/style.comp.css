@@ -184,6 +184,13 @@ a {
   color: inherit;
 }
 
+@font-face {
+  font-family: "Vanilla"; /* Choose a unique name for your font */
+  src: url("../../fonts/vanilla-webfont.woff2") format("woff2"); /* Path to your WOFF2 font file */
+  font-weight: normal;
+  font-style: normal;
+  /* You can also include other font variations (e.g., bold, italic) if available */
+}
 body {
   color: #001D36;
   font-family: "Lato", sans-serif;
@@ -238,12 +245,12 @@ body {
   text-transform: capitalize;
 }
 .primaryHeading__headlineTextMain {
-  font-family: "Rum Raisin", sans-serif;
-  font-size: clamp(2.6rem, 9vw, 3.2rem);
+  font-family: "Vanilla", sans-serif;
+  font-size: clamp(2rem, 9vw, 2.6rem);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  line-height: 0.85;
+  line-height: 1.145;
 }
 .primaryHeading__headlineTextMain--orange, .primaryHeading__headlineTextMain--tree {
   background: linear-gradient(to bottom, #ffb296 15%, #e94104 50%);
@@ -252,7 +259,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .primaryHeading__headlineTextSub {
+  color: #6CB347;
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   text-transform: capitalize;
   line-height: 1;
 }
