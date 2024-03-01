@@ -1,6 +1,6 @@
 # orangeTree044
 
-[proteaPharmacy041](https://svdwebtech.github.io/orangeTree044/) &rarr; A website for Orange Tree Marketing to promote their business Orange Tree Car Wash & Valet
+[orangeTree044](https://svdwebtech.github.io/orangeTree044/) &rarr; A website for Orange Tree Marketing to promote their business Orange Tree Car Wash & Valet in Modimolle.
 
 ## Table of contents
 
@@ -8,6 +8,7 @@
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
+    - [Background] (#background)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -19,7 +20,11 @@
 
 ### Screenshot
 
-![](./img/websiteScreenShots/#)
+![](./img/Images/websiteScreenShot.PNG)
+
+### Background
+
+Estelle approached me to design and develop a new website for their car wash business, Orange Tree Car Wash and Valet.  She also entrusted me with the social media marketing of the business.
 
 ### Links
 
@@ -29,11 +34,11 @@
 
 ### Built with
 
-Project not finished yet
+I built this with html, css, sass and js.  I also made use of a widget on elfsight.
 
 ### What I learned
 
-Project not finished yet
+A project is never finished.  There is always something that can be improved upon.  Listen to your client, they have good ideas about their product.
 
 ## Author
 
@@ -45,4 +50,4 @@ Project not finished yet
 
 ## Acknowledgments
 
-Thank you Orange Tree Marketing for the trust you place in me to help you on this new journey.  
+Thank you Estelle at Orange Tree Marketing for the trust you placed in me to design and develop this website.   
