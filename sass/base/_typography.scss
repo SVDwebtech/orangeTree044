@@ -1,4 +1,6 @@
 // typography
+// font-family: "Caveat", cursive;
+// font-family: "Antonio", sans-serif;
 // font-family: 'Lato', sans-serif;        --- Body Text
 // font-family: 'Open Sans', sans-serif;   --- H3 & H4
 // font-family: 'Playpen Sans', cursive;   --- H2
@@ -32,73 +34,82 @@ body {
 }
 
 .logo {	
-	&__text--headline { 
-		font-family: 'Rum Raisin', sans-serif;
-		font-size: 1.9rem;
-		font-weight: bold;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		line-height: .825;	
-	}
-
-	&__text--headlineOrange, &__text--headlineTree { 
-		background: linear-gradient(to bottom, $cp-lightOrange 15%, $cp-orangeRed 50%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	
-
-	&__text--byline {
-		color: $cf-white;
-		font-family: 'Lato', sans-serif;
-		font-size: 1rem;
-		font-weight: 400;
+	&__textHeadline, &__textByline { 
 		text-transform: capitalize;
-		line-height: 1;
+		line-height: 1;	
+	}
+	&__textHeadline {
+		letter-spacing: 2px;
+		color: $cf-orangeRed;
+		font-family: "Antonio", sans-serif;
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+	&__textByline {
+		color: $cf-green;
+		font-family: "Caveat", cursive;
+		font-size: 1.3rem;
+		font-weight: 700;
 	}
 }
 
 .primaryHeading {
-	color: $cf-white;
-	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
-	font-weight: 400;
-	letter-spacing: 1px;
-	text-align: center;
-
-	&__intro {
-		font-family: 'Open Sans', sans-serif;
+	&__textHeadline, &__textByline { 
 		text-transform: capitalize;
+		line-height: 1;	
 	}
-
-	&__headlineTextMain {
-		// font-family: 'Rum Raisin', sans-serif;
-		font-family: 'Vanilla', sans-serif;
-		font-size: clamp(2rem, 9vw, 2.6rem);
-		font-weight: bold;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		line-height: 1.145;     
-	}
-
-	&__headlineTextMain--orange, &__headlineTextMain--tree {
-		background: linear-gradient(to bottom, $cp-lightOrange 15%, $cp-orangeRed 50%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	&__headlineTextSub {
-		color: $cf-green;
-		font-family: 'Open Sans', sans-serif;
+	&__textHeadline {
+		letter-spacing: 3px;
+		color: $cf-orangeRed;
+		font-family: "Antonio", sans-serif;
+		font-size: 4.5rem;
 		font-weight: 700;
-		text-transform: capitalize;
-		line-height: 1;
 	}
+	&__textByline {
+		color: $cf-green;
+		font-family: "Caveat", cursive;
+		font-size: 2.8rem;
+		font-weight: 700;
+	}
+	// color: $cf-white;
+	// font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+	// font-weight: 400;
+	// letter-spacing: 1px;
+	// text-align: center;
 
-	&__byline {
-		color: $cf-white;
-	}
+	// &__intro {
+	// 	font-family: 'Open Sans', sans-serif;
+	// 	text-transform: capitalize;
+	// }
+
+	// &__headlineTextMain {
+	// 	// font-family: 'Rum Raisin', sans-serif;
+	// 	font-family: 'Vanilla', sans-serif;
+	// 	font-size: clamp(2rem, 9vw, 2.6rem);
+	// 	font-weight: bold;
+	// 	text-transform: uppercase;
+	// 	letter-spacing: 2px;
+	// 	line-height: 1.145;     
+	// }
+
+	// &__headlineTextMain--orange, &__headlineTextMain--tree {
+	// 	background: linear-gradient(to bottom, $cp-lightOrange 15%, $cp-orangeRed 50%);
+	// 	background-clip: text;
+	// 	-webkit-background-clip: text;
+	// 	-webkit-text-fill-color: transparent;
+	// }
+
+	// &__headlineTextSub {
+	// 	color: $cf-green;
+	// 	font-family: 'Open Sans', sans-serif;
+	// 	font-weight: 700;
+	// 	text-transform: capitalize;
+	// 	line-height: 1;
+	// }
+
+	// &__byline {
+	// 	color: $cf-white;
+	// }
 }
 
 .headingH2Container {
@@ -376,6 +387,7 @@ body {
 			font-weight: 800;
 			line-height: 1.2;
 			letter-spacing: 1px;
+			text-align: left;
 			text-decoration: underline;
 			text-underline-offset: 2px;
         }

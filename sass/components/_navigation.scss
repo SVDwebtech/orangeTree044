@@ -7,31 +7,31 @@
 
     gap: clamp(.12rem, 3vw, 4rem);
 
-
+    overflow: hidden;
     position: relative;
     z-index: 100;
 }
 
-.numbers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .numbers {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    gap: 1rem;
+//     gap: 1rem;
 
-    &__landlineContainer, &__whatsappContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+//     &__landlineContainer, &__whatsappContainer {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
         
-        gap: .275rem;
-    }
+//         gap: .275rem;
+//     }
 
-    &__icon {
-        height: 14px;
-        width: 14px;
-    }
-}
+//     &__icon {
+//         height: 14px;
+//         width: 14px;
+//     }
+// }
 
 .contactIconsContainer {
     order: 2;

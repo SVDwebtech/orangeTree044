@@ -1,27 +1,61 @@
 // style logo
 .logo {
-    position: relative;
+    @include displayFlexRow;
+    gap: .5rem;
+    // position: relative;
 
-    &__img {        
-        display: inline;
-        height: auto;
-        width: 4.5rem;
+    &__img {   
+        display: block;
+        width: 8rem;
+        height: auto;     
+        // display: inline;
+        // height: auto;
+        // width: 6rem;
 
-        position: absolute;
-        top: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
 
         z-index: 100;
     }
+    &__logoColorSpacer {
+        @include displayFlexRow;
+        gap: 0;
+        margin: 0 0 .25rem -2.5rem;
+    }
+    &__logoColorSpacerBox {
+        width: 3px;
+        height: 5.8rem;
+        // background-color: red;
+    }
+    &__logoColorSpacerBox--1 {
+        background-color: rgba($cp-green, 1);
+    }
+    &__logoColorSpacerBox--2 {
+        background-color: rgba($cp-green, .65);
+    }
+    &__logoColorSpacerBox--3 {
+        background-color: rgba($cp-green, .35);
+    }
+    &__figcaption {
+        padding-bottom: .25rem;
+    }
 
     &__text {
-        display: inline-flex;
-        flex-direction: column;
+        @include displayFlexColumn;
         justify-content: center;
         align-items: flex-start;
+        gap: 0rem;        
+        // display: inline-flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
 
-        gap: 0rem;
+        // gap: 0rem;
 
-        margin: 0.1rem 0 0 4.2rem;
+        // margin: 0.1rem 0 0 4.2rem;
+    }
+    &__textByline--firstword {
+        margin-left: .25rem;
     }
 }

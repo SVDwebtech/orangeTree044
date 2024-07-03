@@ -35,7 +35,7 @@
     }
     &__paragraph--pricing {
         @include respond(tab-land) {
-            flex: 1 0 19rem;
+            flex: 1 0 10rem;
         }
     };
 }
